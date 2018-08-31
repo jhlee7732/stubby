@@ -39,7 +39,7 @@ footer { padding:30px 4% 80px; }
 .stu_gnb_header .gnb_left p { position:absolute; left:45px; display:inline-block; -webkit-width:calc(100% - 48px); width:calc(100% - 48px); font-size:19px; font-weight:500; line-height:60px; vertical-align:middle; white-space:nowrap; word-wrap:normal; text-overflow:ellipsis; overflow:hidden; }
 .stu_gnb_header .gnb_left .stu_pc-view { display:none; }
 .stu_gnb_header .gnb_right { float:left; width:80px; height:60px; padding-top:12px; text-align:right; }
-.stu_gnb_header .gnb_right > button.ico_like1 { margin-right:8px; }
+.stu_gnb_header .gnb_right > button.ico_like1 { margin-right:4px; }
 .stu_gnb_header .gnb_right .stu_search-input-wrap { display:none; }
 .stu_gnb_header .gnb_right > a { display:none; }
 .stu_lnb_header { display:none; }

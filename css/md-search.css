@@ -23,7 +23,7 @@
 /* 모달 헤더 영역 */
 .md-header { position:fixed; left:50%; transform:translateX(-50%); width:100%; max-width:680px; -webkit-max-width:680px; padding:6.5px 10px; border-bottom:1px solid #3598fd; background:#3598fd; z-index:1; }
 .md-header a.ico_back2 { display:inline-block; width:34px; height:34px; margin-right:5px; vertical-align:middle; background-position:-34px 0; background-size:272px; cursor:pointer; }
-.md-header .md-searchWrap { display:inline-block; position:relative; -webkit-width:calc(100% - 42px); width:calc(100% - 42px); height:46px; padding:0 18px; -webkit-border-radius:3px; border-radius:3px; background:#fafafa; vertical-align:middle; }
+.md-header .md-searchWrap { display:inline-block; position:relative; -webkit-width:calc(100% - 50px); width:calc(100% - 50px); height:46px; padding:0 18px; -webkit-border-radius:3px; border-radius:3px; background:#fafafa; vertical-align:middle; }
 .md-header fieldset { border:none; outline:none; }
 .md-header .md-search-input { display:inline-block; height:46px; border:none; background:none; font-size:16px; font-weight:400; }
 .md-header .md-search-input:hover, .md-searchArea .md-search-input:focus { outline:none; }
