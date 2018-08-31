@@ -1266,6 +1266,15 @@
             $('body').removeClass('modal-opened');
             $('.stu_md-background').removeClass('on');
         });
+
+        // 모달창 결과내 검색
+        $('.md-search-input').keyup(function() {
+            var k = $(this).val();
+            $('.md-section, .md-section > .content-list > .content-item').hide();
+            var temp = $(".md-content > .md-section > .content-list .value:contains('" + k + "'), .md-content > .md-section > .content-list .md-product:contains('" + k + "')");
+            $(temp).parents('.md-section').show();
+            $(temp).closest('li').show();
+        });
     });
 
     // 스크롤 이동(포함사항)
