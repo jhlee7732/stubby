@@ -382,7 +382,7 @@ footer { padding:0 2%; }
 .stu_lnb_header .stu_caution { position:absolute; top:0; right:0; padding-left:22px; }
 .stu_lnb_header .stu_caution p { display:inline-block; font-size:14px; line-height:52px; }
 .stu_lnb_header .stu_caution p:before { content:""; position:absolute; top:17px; left:0; width:19px; height:18px; vertical-align:middle; background-position:-162px -126px; background-size:288px; }
-.stu_lnb_menu > li.lnb_ad { position:absolute; top:74px; right:0; width:320px; overflow:hidden; background:pink; }
+.stu_lnb_menu > li.lnb_ad { position:absolute; top:74px; right:0; width:320px; overflow:hidden; background:#e5e5e5; }
 .stu_lnb_menu > li.lnb_ad .ulWrap { height:213px; }
 .stu_lnb_menu > li.lnb_ad:hover:after { display:none; }
 .stu_lnb_menu > li.lnb_ad .txt-wrap { position:absolute; right:0; bottom:0; left:0; padding:0 20px; font-size:16px; font-weight:400; line-height:50px; background-color:#373737; color:#fff; }
