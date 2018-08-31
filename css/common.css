@@ -96,7 +96,7 @@ img.fh { position:absolute; width:auto; height:100%; top:-100%; right:-100%; bot
 .pd-b-0 { padding-bottom:0! important; }
 
 /* Button */
-.stu_wrap button { display:inline-block; width:34px; height:34px; background-image:url(../images/stu_icon.png); background-repeat:no-repeat; background-size:272px; cursor:pointer; vertical-align:middle; }
+.stu_wrap button { display:inline-block; width:34px; height:34px; background-image:url(../images/common/stu_icon.png); background-repeat:no-repeat; background-size:272px; cursor:pointer; vertical-align:middle; }
 .stu_wrap button.ico_back { background-position:0 0; }
 .stu_wrap button.ico_back2 { background-position:-34px 0; }
 .stu_wrap button.ico_like1 { background-position:-68px 0; }
