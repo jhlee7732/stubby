@@ -157,7 +157,7 @@ footer { padding:30px 4% 80px; }
 .stu_left_wrap .step .desc .stu_img_wrap { position:relative; padding-top:56%; overflow:hidden; }
 .stu_left_wrap .step:before { content:""; position:absolute; top:10px; left:0; bottom:-30px; margin-left:8px; border-right:2px solid #333; }
 .stu_left_wrap .step:last-child:before { display:none; }
-.stu_left_wrap .step:after { counter-increment:step; content:counter(step); position:absolute; top:-2px; left:-4px; width:26px; height:32.5px; padding-top:5px; background-position:-26px -162.5px; background-size:260px; font-size:12px; font-weight:500; text-align:center; color:#fff; }
+.stu_left_wrap .step:after { counter-increment:step; content:counter(step); position:absolute; top:-3px; left:-4px; width:26px; height:32.5px; padding-top:6px; background-position:-26px -162.5px; background-size:260px; font-size:12px; font-weight:500; text-align:center; color:#fff; }
 .stu_left_wrap .step + .step { padding-top:16px; }
 .stu_left_wrap .step + .step:before { top:0; }
 .stu_left_wrap .step + .step:after { margin-top:16px; }
