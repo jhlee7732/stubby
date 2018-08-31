@@ -5,7 +5,7 @@
 /* ========================================================= */
 
 /* 공통 */
-.swiper-button-next, .swiper-button-prev, .stu_top_banner .loc li:before, .stu_top_banner .score .ico_star_bg, .stu_top_banner .score .ico_star_bg .ico_star, .stu_top_banner .ico_prd, .stu_top_banner .btnBox button.btn_left:before, .stu_top_banner .btnBox button.btn_right:before, .stu_right_wrap .tb-title .stu_h4_title:after, .stu_left_wrap .stu_box_wrapper h4.ico:before, .stu_left_wrap .step:after, .stu_left_wrap .ico_star_bg, .stu_left_wrap .ico_star, .stu_wrap .stu_js-btn:after, .stu_wrap .stu_cmt-btn:after, .stu_wrap .stu_cont-btn:after, .stu_top p:before, .stu_gnb_header .gnb_right .stu_search-input:before, .stu_gnb_header .gnb_right .stu_search-input:after, .stu_gnb_header .gnb_right > a:before, .stu_lnb_menu > li.over:hover:after, .stu_lnb_menu > li > a.ico_home:before, .stu_lnb_header .stu_caution p:before, .stu_lnb_menu > li.lnb_ad .txt-wrap:after, .stu_top_banner .loc:before, .stu_nav_container .stu_btnBox button.stu_btn_left:before,  .stu_nav_container .stu_btnBox button.stu_btn_right:before { background-image:url(stu_icon.png); background-repeat:no-repeat; }
+.swiper-button-next, .swiper-button-prev, .stu_top_banner .loc li:before, .stu_top_banner .score .ico_star_bg, .stu_top_banner .score .ico_star_bg .ico_star, .stu_top_banner .ico_prd, .stu_top_banner .btnBox button.btn_left:before, .stu_top_banner .btnBox button.btn_right:before, .stu_right_wrap .tb-title .stu_h4_title:after, .stu_left_wrap .stu_box_wrapper h4.ico:before, .stu_left_wrap .step:after, .stu_left_wrap .ico_star_bg, .stu_left_wrap .ico_star, .stu_wrap .stu_js-btn:after, .stu_wrap .stu_cmt-btn:after, .stu_wrap .stu_cont-btn:after, .stu_top p:before, .stu_gnb_header .gnb_right .stu_search-input:before, .stu_gnb_header .gnb_right .stu_search-input:after, .stu_gnb_header .gnb_right > a:before, .stu_lnb_menu > li.over:hover:after, .stu_lnb_menu > li > a.ico_home:before, .stu_lnb_header .stu_caution p:before, .stu_lnb_menu > li.lnb_ad .txt-wrap:after, .stu_top_banner .loc:before, .stu_nav_container .stu_btnBox button.stu_btn_left:before,  .stu_nav_container .stu_btnBox button.stu_btn_right:before { background-image:url(../images/stu_icon.png); background-repeat:no-repeat; }
 body { background-color:#e8e8e8; }
 main { margin:0; padding:0; }
 p { margin:0; font-size:16px; font-weight:300; line-height:24px; color:#222; }
@@ -51,9 +51,9 @@ footer { padding:30px 4% 80px; }
     /* 슬라이드 배너 */
 .stu_top_banner .swiper-container { position:relative; width:100%; }
 .stu_top_banner .linkArea { display:none; }
-.stu_top_banner .swiper-slide { position:relative; width:100%; padding-top:60%; overflow:hidden; background:url(bg-default.gif) center no-repeat; background-size:cover; }
+.stu_top_banner .swiper-slide { position:relative; width:100%; padding-top:60%; overflow:hidden; background:url(../images/bg-default.gif) center no-repeat; background-size:cover; }
 .stu_top_banner .swiper-slide img { position:absolute; width:100%; height:auto; top:-100%; right:-100%; bottom:-100%; left:-100%; margin:auto; }
-.stu_top_banner .swiper-pagination-fraction { bottom:0; height:60px; padding-top:40px; font-size:14px; font-weight:400; letter-spacing:0; color:#333; background:url(tone-white.png) 0 1px repeat-x; }
+.stu_top_banner .swiper-pagination-fraction { bottom:0; height:60px; padding-top:40px; font-size:14px; font-weight:400; letter-spacing:0; color:#333; background:url(../images/tone-white.png) 0 1px repeat-x; }
     /* 메인 정보 */
 .stu_top_banner .mainInfo-container { padding:10px 20px 0; }
 .stu_top_banner .mainInfo { text-align:center; }
@@ -222,7 +222,7 @@ footer { padding:30px 4% 80px; }
 .stu_wrap .stu_cont-btn.on:after { background-position:-78px -72px; }
 .stu_s1 .stu_left_wrap .stu_division { padding-bottom:50px; }
 .stu_s1 .stu_left_wrap .stu_division.compression { height:300px; overflow:hidden; }
-.stu_s1 .stu_left_wrap .stu_division.compression:after { content:""; position:absolute; bottom:51px; left:0; width:100%; height:60px; background:url(tone-white.png) 0 1px repeat-x; }
+.stu_s1 .stu_left_wrap .stu_division.compression:after { content:""; position:absolute; bottom:51px; left:0; width:100%; height:60px; background:url(../images/tone-white.png) 0 1px repeat-x; }
 
     /* 문의 입력폼 */
 .stu_left_wrap .cmtTxt-inner { position:relative; margin-bottom:10px; border:1px solid #e5e5e5; background:#fff; }
@@ -250,7 +250,7 @@ footer { padding:30px 4% 80px; }
 .stu_morePrd li { display:inline-block; width:52%; margin:0 1.5%; padding-bottom:4px; text-align:left; color:#222; }
 .stu_morePrd li:first-child { margin-left:0; }
 .stu_morePrd li:last-child { margin-right:20px; }
-.stu_morePrd .thumb { position:relative; padding-top:60%; overflow:hidden; background:url(bg-default.gif) center no-repeat; background-size:cover; }
+.stu_morePrd .thumb { position:relative; padding-top:60%; overflow:hidden; background:url(../images/bg-default.gif) center no-repeat; background-size:cover; }
 .stu_morePrd dl { padding:0 2px; }
 .stu_morePrd dt { display:block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; min-height:36px; margin:4px 0; overflow:hidden; text-overflow:ellipsis; font-size:14px; font-weight:600; line-height:20px; color:#222; }
 .stu_morePrd dd p { float:left; padding-right:6px; font-size:14px; color:#222; overflow:hidden; }
