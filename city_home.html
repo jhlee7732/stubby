@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+<head>
+    <title>도시 페이지</title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <!-- CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/md-search.css">
+    <link rel="stylesheet" type="text/css" href="css/cityHome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- lazysizes.min.js : 레이지로딩 -->
+    <script src="js/lazysizes.min.js" type="text/javascript" async=""></script>
+    <!-- swiper.min.js : 이미지슬라이더 -->
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <!-- daterangepicker.js : 달력 -->
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/daterangepicker.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="stu_wrap">
+    <header>
+        <div id="temp_header"></div>
+    </header>
+    <!--//헤더영역 End-->
+    <!--메인영역_Str-->
+    <main>
+        <!-- 모달 영역 -->
+        <section class="stu_md-background">
+            <div class="md-container">
+                <div class="md-header">
+                    <a href="#stu_md-close" class="ico_back2"></a>
+                    <div class="md-searchWrap">
+                        <form method="get" action="#">
+                            <fieldset>
+                                <input type="search" name="search" autocorrect="off" autosave="off" class="md-search-input" placeholder="투어 또는 국가로 검색하세요." value>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="md-content">
+                    <div class="md-section">
+                        <div class="content-header ico_country">서유럽 국가</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">프랑스</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">이탈리아</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">스위스</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">영국</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">독일</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md-section">
+                        <div class="content-header ico_country">지중해 국가</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">스페인</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">포르투갈</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">그리스</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">터키</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md-section">
+                        <div class="content-header ico_country">동유럽 국가</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">체코</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">헝가리</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">오스트리아</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">크로아티아</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md-section">
+                        <div class="content-header ico_country">북유럽 국가</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">아이슬란드</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">러시아</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">발트3국</b>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md-section">
+                        <div class="content-header ico_theme">테마</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">몽생미셸 투어</b>
+                                        <i class="category">프랑스</i>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">해리포터 스튜디오</b>
+                                        <i class="category">영국</i>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="value">
+                                        <b class="name">프라하 스카이다이빙</b>
+                                        <i class="category">체코</i>
+                                    </div>
+                                    <div class="count">
+                                        <span class="num">100</span>개 상품
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md-section">
+                        <div class="content-header ico_product">상품</div>
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="#">
+                                    <div class="md-product">
+                                        <figure class="md-photo">
+                                            <img class="fh lazyload" data-src="images/sample/s13.jpg" alt=""/>
+                                        </figure>
+                                        <b class="name">
+                                            <span class="txt">[인디고파리] 음악과 함께 파리야경시내 워킹투어</span>
+                                        </b>
+                                        <i class="category">프랑스</i>
+                                        <span class="price">
+                                            <b class="amount">20,000원</b>
+                                            <i class="base">/ 1인</i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stu_top_banner">
+            <div class="stu_bg" style="background-image:url(images/sample/00.jpg);">
+                <button class="ico_search" type="button"></button>
+                <div class="titArea">
+                    <a href="#" class="loc">프랑스</a>
+                    <b class="current-city">파리</b>
+                </div>
+                <div class="stu_schedule">
+                    <input type="text" name="datefilter" class="selectDate" value="" readonly onfocus="this.blur();" placeholder="여행 시작일 ~ 종료일" />
+                </div>
+            </div>
+            <div class="popover-wrap">
+                <ul>
+                    <li><a href="#" class="current">파리</a></li>
+                    <li><a href="#" class="">니스</a></li>
+                    <li><a href="#" class="">마르세유</a></li>
+                    <li><a href="#" class="">보르도</a></li>
+                    <li><a href="#" class="">아비뇽</a></li>
+                    <li><a href="#" class="">스트라스부르</a></li>
+                    <li><a href="#" class="">칸</a></li>
+                    <li><a href="#" class="">리옹</a></li>
+                    <li><a href="#" class="">아를</a></li>
+                    <li><a href="#" class="">디종</a></li>
+                    <li><a href="#" class="">릴</a></li>
+                    <li><a href="#" class="">콜마르</a></li>
+                    <li><a href="#" class="">안시</a></li>
+                    <li><a href="#" class="">님</a></li>
+                    <li><a href="#" class="">보졸레</a></li>
+                    <li><a href="#" class="">페루즈</a></li>
+                    <li><a href="#" class="">낭트</a></li>
+                    <li><a href="#" class="">푸아티에</a></li>
+                    <li><a href="#" class="">코냐크</a></li>
+                    <li><a href="#" class="">알자스</a></li>
+                    <li><a href="#" class="">그라스</a></li>
+                    <li><a href="#" class="">라로셸</a></li>
+                    <li><a href="#" class="">옹플뢰르</a></li>
+                    <li><a href="#" class="">에기솅</a></li>
+                    <li><a href="#" class="">몽펠리에</a></li>
+                    <li><a href="#" class="">툴루즈</a></li>
+                    <li><a href="#" class="">랭스</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="stu_spot_filter">
+            <div class="stu_inner_wrap">
+                <div class="titArea">
+                    <h3 class="stu_title">관광 명소를 선택하세요</h3>
+                    <a class="stu_more">전체보기</a>
+                    <a class="stu_reset">모두 지우기</a>
+                    <div class="btnBox">
+                        <button type="button">확인</button>
+                    </div>
+                </div>
+                <!--Swiper Wrap-->
+                <div class="swiper-container swiper1">
+                    <ul class="swiper-wrapper">
+                        <!--Swiper Item List-->
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s01.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>에펠탑</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s02.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>루브르 박물관</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s03.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>세느강</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s04.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>몽마르뜨 언덕</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s05.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>노트르담 대성당</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s06.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>베르사유</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s07.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>몽 생 미셸</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s08.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>오르세 미술관</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s09.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>지베르니</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s10.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>샹젤리제 거리</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s11.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>파리 개선문</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img-wrap">
+                                <img class="lazyload fh" data-src="images/sample/s12.jpg">
+                                <div class="checkmark draw d-n"></div>
+                            </div>
+                            <div class="txt-wrap">
+                                <p>루아르고성</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--scrollbar-->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="btnBox-toggle">
+                    <button type="button"></button>
+                </div>
+            </div>
+        </section>
+        <section class="stu_prd_list">
+            <div class="stu_inner_wrap">
+                <div class="prd_header">
+                    <div class="titArea">
+                        <h3 class="stu_title">상품</h3>
+                        <span class="stu_count">00</span>
+                        <a class="stu_reset">모두 지우기</a>
+                    </div>
+                </div>
+                <ul class="prd_list">
+                    <li class="prd_item">
+                        <div class="like"></div>
+                        <a href="#" class="prd">
+                            <figure class="thumb">
+                                <img class="fh lazyload" data-src="images/sample/s08.jpg" alt=""/>
+                                <div class="band bg_red">10%</div>
+                            </figure>
+                            <div class="prd_info">
+                                <div class="cpn">투어퍼즐</div>
+                                <div class="name">
+                                    <span>[+가이드북] 뮤지엄 패스 2일권 - 6종 할인쿠폰까지 지급!</span>
+                                </div>
+                                <div class="tag">
+                                    <span>박물관 티켓 / 교통패스</span>
+                                </div>
+                                <div class="score">
+                                    <div class="ico_star_bg">
+                                        <div class="ico_star" style="width:80%"></div>
+                                    </div>
+                                    <span>4.0</span>
+                                </div>
+                                <div class="duration">조정가능</div>
+                                <div class="price">
+                                    <span>1인 / </span>65,000원
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="prd_item">
+                        <div class="like"></div>
+                        <a href="#" class="prd">
+                            <figure class="thumb">
+                                <img class="fh lazyload" data-src="images/sample/s07.jpg" alt=""/>
+                                <div class="band bg_red d-n">45%</div>
+                            </figure>
+                            <div class="prd_info">
+                                <div class="cpn">이지고프랑스</div>
+                                <div class="name">
+                                    <span>노르망디 당일투어 : 몽생미셸 + 옹플레흐 + 에트르타</span>
+                                </div>
+                                <div class="tag">
+                                    <span>근교 2곳 / 스냅 / 유료샌딩</span>
+                                </div>
+                                <div class="score">
+                                    <div class="ico_star_bg">
+                                        <div class="ico_star" style="width:90%"></div>
+                                    </div>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="duration">20 시간</div>
+                                <div class="price">
+                                    <span>1인 / </span>180,000원
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="prd_item">
+                        <div class="like"></div>
+                        <a href="#" class="prd">
+                            <figure class="thumb">
+                                <img class="fh lazyload" data-src="images/sample/s03.jpg" alt=""/>
+                                <div class="band bg_red">45%</div>
+                            </figure>
+                            <div class="prd_info">
+                                <div class="cpn">웹투어</div>
+                                <div class="name">
+                                    <span>[프랑스 파리] 바토무슈 유람선 티켓 (우편 배송비 없음)</span>
+                                </div>
+                                <div class="tag">
+                                    <span>티켓 / 교통패스 / 야경</span>
+                                </div>
+                                <div class="score">
+                                    <div class="ico_star_bg">
+                                        <div class="ico_star" style="width:100%"></div>
+                                    </div>
+                                    <span>5.0</span>
+                                </div>
+                                <div class="duration">1 시간</div>
+                                <div class="price">
+                                    <span>1인 / </span>7,500원
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="prd_item">
+                        <div class="like"></div>
+                        <a href="#" class="prd">
+                            <figure class="thumb">
+                                <img class="fh lazyload" data-src="images/sample/01.jpg" alt=""/>
+                                <div class="band bg_red d-n">45%</div>
+                            </figure>
+                            <div class="prd_info">
+                                <div class="cpn">Hyeri Kim</div>
+                                <div class="name">
+                                    <span>[투어] 에펠탑 원데이 드로잉 :: 프랑스/파리</span>
+                                </div>
+                                <div class="tag">
+                                    <span>즐길거리 / 파리</span>
+                                </div>
+                                <div class="score">
+                                    <div class="ico_star_bg">
+                                        <div class="ico_star" style="width:90%"></div>
+                                    </div>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="duration">2 시간</div>
+                                <div class="price">
+                                    <span>1인 / </span>57,000원
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--//메인영역_End-->
+    <!--맨 위로 이동-->
+    <div class="stu_top_wrap">
+        <a href="#" class="stu_top">
+            <p>맨 위로</p>
+        </a>
+    </div>
+    <!--//맨 위로 이동_End-->
+    <footer>
+        <div class="stu_inner_wrap">
+            <div class="stu_footerMenu">
+                <!--유틸메뉴-->
+                <img src="images/footer/footLogo.png" alt="스투비플래너">
+                <ul class="stu_utilMenu">
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">B2B 제휴 (여행사 전용)</a></li>
+                </ul>
+                <!--sns-->
+                <ul class="stu_snsShare">
+                    <li id="stu_sns1"><a href="#" title="페이스북">페이스북</a></li>
+                    <li id="stu_sns2"><a href="#" title="인스타그램">인스타그램</a></li>
+                </ul>
+            </div>
+            <div class="stu_footerInfo">
+                <address>
+                    상호명 스투비플래너 │ 대표 백주흠 │ 사업자등록번호 220-88-67466 │ 서울특별시 관악구 남부순환로 1837 샤론빌딩 4층<br/>
+                    대표번호 070-2286-0982 │ 일반문의 stubbyteam@gmail.com │ 운영시간(한국) 11:00 ~ 19:00, 주말 / 공휴일은 제외<br/>
+                    스투비플래너는 광고서비스 제공자 및 예약 시스템의 공급자이며 통신판매의 당사자가 아닙니다. 따라서 스투비플래너는 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.
+                </address>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--//Contents_End-->
+
+<script>
+    $(document).ready(function() {
+        //달력 선택 도구
+        $('input[name="datefilter"]').daterangepicker({
+            autoUpdateInput: false,
+            opens: "center",
+            locale: {
+                format: 'M월 D일',
+                separator: ' ~ ',
+                applyLabel: '적용',
+                cancelLabel: '초기화',
+                daysOfWeek: [
+                '일',
+                '월',
+                '화',
+                '수',
+                '목',
+                '금',
+                '토'
+                ],
+                monthNames: [
+                '1월',
+                '2월',
+                '3월',
+                '4월',
+                '5월',
+                '6월',
+                '7월',
+                '8월',
+                '9월',
+                '10월',
+                '11월',
+                '12월'
+                ],
+            },
+        });
+        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('M월 D일') + ' ~ ' + picker.endDate.format('M월 D일'));
+        });
+        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+        // 날짜선택 팝업 On
+        $('.stu_top_banner .stu_schedule input').click(function() {
+            $('body').addClass('modal-opened');
+            $('.daterangepicker').addClass('action');
+            $('.daterangepicker').removeClass('d-n');
+        });
+        // 날짜선택 팝업 Off
+        $('.daterangepicker .stu_close, .daterangepicker .drp-buttons .btn').click(function() {
+            $('body').removeClass('modal-opened');
+            $('.daterangepicker').removeClass('action');
+            $('.daterangepicker').addClass('d-n');
+        });
+        // $(document).click(function(e) {
+        //     if(!$(e.target).is('.dateranepicker, .selectDate')) {
+        //         $('body').removeClass('modal-opened');
+        //     };
+        // });
+        //도시 이동 메뉴(토글)
+        $('.current-city').click(function(event) {
+            event.stopPropagation();
+            $(this).toggleClass('on');
+            $('.popover-wrap').toggleClass('on');
+        });
+        $(document).click(function() {
+            $('.current-city').removeClass('on');
+            $('.popover-wrap').removeClass('on');
+        });
+        // 이미지 스와이핑
+        var mySwiper = new Swiper ('.swiper1', {
+            slidesPerView:'auto',
+            freeMode:true,
+            direction:'horizontal',
+            noSwiping:true,
+            noSwipingClass:'swiper-slide',
+            breakpoints: {
+                620: {
+                    noSwiping:false,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                        hide: true,
+                    },
+                },
+            },
+        });
+        // 도시선택 팝업 On
+        $('.stu_spot_filter .stu_more').click(function() {
+            $('body').addClass('modal-opened');
+            $('.stu_spot_filter').addClass('action');
+        });
+        // 도시선택 팝업 Off
+        $('.stu_spot_filter .stu_title, .stu_spot_filter .btnBox').click(function() {
+            $('body').removeClass('modal-opened');
+            $('.stu_spot_filter').removeClass('action');
+        });
+        // 도시선택 아코디언(토글)
+        $('.btnBox-toggle').click(function() {
+            $(this).children('button').toggleClass('on');
+            $('.stu_spot_filter .swiper-container').toggleClass('h-a');
+        });
+        // 체크 애니메이션 효과
+        $('.img-wrap').on('click', function() {
+            $(this).children('.checkmark').toggleClass('d-n');
+        });
+        // 선택 Reset
+        $('a.stu_reset').click(function() {
+            $('.checkmark').addClass('d-n');
+        });
+        // 찜하기(토글)
+        $('.stu_prd_list .like').on('click', function() {
+            $(this).toggleClass('active');
+        });
+        // 맨 위로 가기
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 600) {
+                $('.stu_top_wrap').fadeIn();
+            } else {
+                $('.stu_top_wrap').fadeOut();
+            }
+        });
+        $('.stu_top').click(function() {
+            $('html, body').animate({scrollTop : 0}, 400);
+            return false;
+        });
+
+        // 아코디언 메뉴(토글)
+        $('.tb-wrap').addClass('d-n');
+        $('.tb-title').click(function() {
+            $(this).children('.stu_h4_title').toggleClass('on');
+            $(this).next('.tb-wrap').toggleClass('d-n');
+        });
+        $('.toggle #fold').addClass('on');
+        $('.step .desc').addClass('d-n');
+        $('.toggle #fold').click(function() {
+            $(this).addClass('on');
+            $('.step .desc').addClass('d-n');
+            $('.toggle #push-up').removeClass('on');
+        });
+        $('.toggle #push-up').click(function() {
+            $(this).addClass('on');
+            $('.step .desc').removeClass('d-n');
+            $('.toggle #fold').removeClass('on');
+        });
+
+        // 모달창 열기/닫기
+        $('.stu_wrap button.ico_search, .stu_search-input-wrap').click(function() {
+            $('body').addClass('modal-opened');
+            $('.stu_md-background').addClass('on');
+            $('.md-searchWrap input.md-search-input').focus();
+        });
+        $('.md-header a.ico_back2').click(function() {
+            $('body').removeClass('modal-opened');
+            $('.stu_md-background').removeClass('on');
+        });
+    });
+
+    // 후기 더 불러오기
+    $(window).on('load', function () {
+        load('#stu_js-load', '1');
+        $(".stu_js-btn-wrap .stu_js-btn").on("click", function () {
+            load('#stu_js-load', '3', '.stu_js-btn-wrap');
+        })
+    });
+    function load(id, cnt, btn) {
+        var contList = id + " .stu_js-load:not(.active)";
+        var contLength = $(contList).length;
+        var contTotal_cnt;
+        if (cnt < contLength) {
+            contTotal_cnt = cnt;
+        } else {
+            contTotal_cnt = contLength;
+            $('.stu_js-btn').hide()
+        }
+        $(contList + ":lt(" + contTotal_cnt + ")").addClass("active");
+    }
+
+</script>
+</body>
+</html>

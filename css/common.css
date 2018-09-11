@@ -25,6 +25,7 @@ i,em,strong,address { font-style:normal; font-weight:500; }
 label { display:inline-block; vertical-align:middle; cursor:pointer; }
 blockquote,q { content:""; quotes:none; }
 caption,legend { overflow:hidden; visibility:hidden; position:absolute; top:-1000%; left:-1000%; width:0; height:0; font-size:0; line-height:0; text-indent:-9999em; z-index:1; }
+body.modal-opened { width:100%; height:100%; overflow:hidden; }
 
 
 /* a 태그 속성 */
@@ -58,7 +59,6 @@ input:-ms-input-placeholder { line-height:40px; color:#c4c4c4; }
 select {width:100%; height:40px; line-height:38px; color:#666; font-size:14px; text-indent:5px; background:#fff; border:1px solid #ccc; }
 textarea { width:100%; height:150px; line-height:18px; padding:10px 15px; font-size:14px; color:#333; resize:none; border:1px solid #ccc; }
 button { display:inline-block; cursor:pointer; }
-body.modal-opened { width:100%; height:100%; overflow:hidden; }
 
 
 /* clearfix */
@@ -88,7 +88,8 @@ img.fh { position:absolute; width:auto; height:100%; top:-100%; right:-100%; bot
 /* display */
 .d-b { display:block; }
 .d-ib { display:inline-block; }
-.d-n { display:none; }
+.d-n { display:none! important; }
+.h-a { height:auto! important; }
 .t-v-mid-box { display:table; width:100%; height:100%; }
 .t-v-mid { display:table-cell; position:relative; vertical-align:middle; font-size:0; }
 .mg-0 { margin:0! important; }
@@ -96,7 +97,7 @@ img.fh { position:absolute; width:auto; height:100%; top:-100%; right:-100%; bot
 .pd-b-0 { padding-bottom:0! important; }
 
 /* Button */
-.stu_wrap button { display:inline-block; width:34px; height:34px; background-image:url(../images/common/stu_icon.png); background-repeat:no-repeat; background-size:272px; cursor:pointer; vertical-align:middle; }
+.stu_wrap button { display:inline-block; width:34px; height:34px; background-image:url(../images/stu_icon.png); background-repeat:no-repeat; background-size:272px; cursor:pointer; vertical-align:middle; }
 .stu_wrap button.ico_back { background-position:0 0; }
 .stu_wrap button.ico_back2 { background-position:-34px 0; }
 .stu_wrap button.ico_like1 { background-position:-68px 0; }
@@ -164,6 +165,10 @@ footer .stu_footerMenu { margin:0 auto; padding-bottom:20px; text-align:center; 
 
 @media (min-width:620px){
 
+/* reset */
+body.modal-opened { overflow:visible; }
+
+
 /* wrap */
 .stu_inner_wrap { max-width:980px; min-width:580px;}
 
@@ -181,7 +186,7 @@ footer .stu_footerMenu { margin:0 auto; padding-bottom:20px; text-align:center; 
 footer { padding:30px 2% 50px; }
 .stu_footerMenu img { width:165px; }
 .stu_utilMenu { display:block; }
-.stu_utilMenu li { display:inline-block; padding-left:15px; margin-left:15px; background:url(../images/footer/bar_2x13.png) left center no-repeat; }
+.stu_utilMenu li { display:inline-block; padding-left:15px; margin-left:15px; background:url(../images/bar_2x13.png) left center no-repeat; }
 .stu_utilMenu li:first-child { background:none; padding:0; margin:0; }
 .stu_footerInfo address { line-height:24px; }
 }
