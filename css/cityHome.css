@@ -133,9 +133,10 @@ footer { padding:30px 4% 80px; }
 
     /* 상품 필터 */
 .prd_filter { margin:0; padding:0; }
-.prd_filter .btn_prd_filter button { position:fixed; left:50%; bottom:10px; -webkit-width:calc(100% - 20px);  width:calc(100% - 20px); -webkit-min-width:180px; min-width:180px; -webkit-max-width:268px; max-width:268px; height:44px; -webkit-transform:translateX(-50%); transform:translateX(-50%); -webkit-border-radius:2px; border-radius:2px; background:#3ad195; font-size:16px; font-weight:500; line-height:42px; letter-spacing:0; color:#fff; z-index:3; }
+.prd_filter .btn_prd_filter button { position:fixed; left:50%; bottom:10px; -webkit-width:calc(100% - 20px);  width:calc(100% - 20px); -webkit-min-width:140px; min-width:140px; -webkit-max-width:208px; max-width:208px; height:44px; -webkit-transform:translateX(-50%); transform:translateX(-50%); -webkit-border-radius:2px; border-radius:2px; background:#3ad195; font-size:16px; font-weight:500; line-height:42px; letter-spacing:0; color:#fff; z-index:3; }
 .prd_filter .btn_prd_filter button:hover { background:#37c68d; }
 .prd_filter .btn_prd_filter button:before { content:""; display:inline-block; width:22px; height:22px; margin-right:6px; vertical-align:-6px; background-position:-220px -220px; background-size:320px; }
+.prd_filter span.select_count { display:inline-block; -webkit-min-width:18px; min-width:18px; height:18px; -webkit-border-radius:9px; border-radius:9px; font-size:12px; line-height:18px; vertical-align:1px; text-align:center; }
 .prd_filter .filter-section { position:relative; border-top:1px solid #e5e5e5; margin:0 auto; padding:24px 0; font-size:14px; text-align:left; color:#222; }
 .prd_filter .filter-section:first-child { border-top:0; }
 .prd_filter .filter-wrap { padding:10px 0; }
@@ -293,7 +294,7 @@ h3.stu_title { font-size:19px; line-height:28px; }
 .prd_filter .stu_inner_wrap { float:left; position:initial; width:30%; -webkit-min-width:auto; min-width:auto; -webkit-max-width:220px; max-width:220px; }
 .prd_filter .btn_prd_filter { display:none; }
 .prd_filter .filter-container { display:block; padding:60px 0 0 20px; }
-.prd_filter .filter-section:first-child { position:absolute; right:20px; -webkit-transform:translateY(-40px); transform:translateY(-40px); padding:0; z-index:1; }
+.prd_filter .filter-section:first-child { position:absolute; right:20px; -webkit-transform:translateY(-36px); transform:translateY(-36px); padding:0; z-index:1; }
 .prd_filter .filter-section:first-child .stu_title { display:none; }
 .prd_filter .filter-wrap.sortBy { clear:left; width:auto; -webkit-box-shadow:none; box-shadow:none; }
 .prd_filter .filter-list.table { float:none; display:inline-block; width:auto; height:auto; margin:0 0 0 6px; -webkit-box-shadow:none; box-shadow:none; font-size:14px; line-height:30px; }
@@ -463,8 +464,7 @@ footer { padding:0 2%; }
 .stu_prd_list .thumb { width:100%; height:0; padding-top:60%; margin:0; -webkit-border-radius:0; border-radius:0; }
 .stu_prd_list .thumb img { width:100%; height:auto; }
 .stu_prd_list .like { background-position:-112px 0; opacity:1; }
-.stu_prd_list .prd_info { float:left; height:118px; padding:8px 12px; }
-.stu_prd_list .cpn { margin-bottom:2px; }
+.stu_prd_list .prd_info { float:left; width:100%; height:118px; padding:8px 12px; }
 .stu_prd_list .name { margin-bottom:2px; -webkit-max-height:36.2px; max-height:36.2px; -webkit-min-height:22px; min-height:22px; font-size:15px; line-height:19px; }
 .stu_prd_list .tag { margin-bottom:4px; }
 .stu_prd_list .score { left:12px; bottom:8px; }
