@@ -96,7 +96,7 @@
 
 .daterangepicker .ranges { float:none; text-align:left; margin:0; }
 
-.daterangepicker.show-calendar .ranges { margin-top:8px; }
+.daterangepicker.show-calendar .ranges { /*margin-top:8px;*/ height:8px; }
 
 .daterangepicker .ranges ul { list-style:none; margin:0 auto; padding:0; width:100%; }
 
