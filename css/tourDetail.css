@@ -86,11 +86,11 @@ footer { padding:30px 4% 80px; }
 .stu_top_banner .btnBox { position:fixed; right:0; bottom:0; left:0; width:100%; padding:10px 3%; border-top:1px solid #e5e5e5; background:#fff; z-index:10; }
 .stu_top_banner .btnBox button { height:auto; border-width:1px; border-style:solid; font-size:16px; line-height:44px; font-weight:500; letter-spacing:0; }
 .stu_top_banner .btnBox button.btn_left { float:left; width:44px; border-color:#ccc; background:#ccc; font-size:0; color:#888; }
-.stu_top_banner .btnBox button.btn_right { float:right; -webkit-width:calc(100% - 52px); width:calc(100% - 52px); border-color:#3ad195; background:#3ad195; color:#fff; }
+.stu_top_banner .btnBox button.btn_right { float:right; -webkit-width:calc(100% - 52px); width:calc(100% - 52px); border-color:#ee685a; background:#ee685a; color:#fff; }
 .stu_top_banner .btnBox button.btn_left:before { content:""; display:inline-block; position:relative; width:29.75px; height:34px; vertical-align:middle; background-position:-187px -136px; background-size:272px; }
 .stu_top_banner .btnBox button.btn_right:before { content:""; display:inline-block; position:relative; bottom:3px; width:22.5px; height:30px; padding-right:2px; vertical-align:middle; background-position:-217.5px -120px; background-size:240px; }
 .stu_top_banner .btnBox button.btn_left:hover { border-color:#bbb; background:#bbb; }
-.stu_top_banner .btnBox button.btn_right:hover { border-color:#37c68d; background:#37c68d; }
+.stu_top_banner .btnBox button.btn_right:hover { border-color:#e35353; background:#e35353; }
 
 
 
@@ -230,7 +230,7 @@ footer { padding:30px 4% 80px; }
 .stu_left_wrap .cmtTxt-inbox { position:relative; background:#fff; }
 .stu_left_wrap .cmtTxt { display:block; position:relative; height:120px; padding:10px 15px 20px; border:none; background:transparent; font-size:14px; font-weight:400; line-height:22px; letter-spacing:normal; color:#222; -webkit-appearance:none; resize:none; }
 .stu_left_wrap .cmtTxt-upload { height:42px; }
-.stu_left_wrap .cmtTxt-btn-upload { display:block; position:absolute; left:0; bottom:-1px; width:100%; height:42px; background:#3ad195; border:1px solid rgba(0,0,0,.1); font-size:15px; font-weight:600; line-height:100%; text-align:center; color:#fff; }
+.stu_left_wrap .cmtTxt-btn-upload { display:block; position:absolute; left:0; bottom:-1px; width:100%; height:42px; background:#8f8f8f; border:1px solid rgba(0,0,0,.1); font-size:15px; font-weight:600; line-height:100%; text-align:center; color:#fff; }
 
     /* 이용자 문의 */
 .stu_left_wrap .cmt-box { position:relative; margin-bottom:20px; padding-top:24px; border-top:1px solid #e5e5e5; font-size:14px; font-weight:300; line-height:24px; color:#222; overflow:hidden; }
@@ -246,7 +246,7 @@ footer { padding:30px 4% 80px; }
 /* 상품 리스트 - 2단(스와이핑) */
 .stu_prd_list .stu_h3_title { margin:0 0 0 20px; }
 .stu_prd_list .swiper-container { z-index:0; }
-.stu_prd_list .prd_item { display:-webkit-box; display:-webkit-flex; display:flex; width:52%; margin:0 1.5%; padding-bottom:4px; -webkit-border-radius:2px; border-radius:2px; text-align:left; color:#222; }
+.stu_prd_list .prd_item { display:-webkit-box; display:-webkit-flex; display:flex; width:52%; margin:0 1.5%; padding-bottom:4px; -webkit-border-radius:2px; border-radius:2px; text-align:left; color:#222; overflow:hidden; }
 .stu_prd_list .prd_item:first-child { margin-left:20px; }
 .stu_prd_list .prd_item:last-child { margin-right:20px; }
 .stu_prd_list .like { position:absolute; top:5px; right:5px; width:28px; height:28px; background-position:-112px 0; background-size:224px; z-index:2; }
@@ -461,11 +461,11 @@ footer { padding:0 2%; }
 .stu_nav_container .stu_btnBox button { position:relative; bottom:56px; height:44px; border-width:1px; border-style:solid; transition:bottom .15s linear; font-size:16px; }
 .stu_nav_container .stu_btnBox button.on { bottom:0; }
 .stu_nav_container .stu_btnBox button.stu_btn_left { float:left; width:44px; border-color:#ccc; background:#fff; font-size:0; color:#888; }
-.stu_nav_container .stu_btnBox button.stu_btn_right { float:right; -webkit-width:calc(100% - 52px); width:calc(100% - 52px); border-color:#3ad195; background:#3ad195; color:#fff; }
+.stu_nav_container .stu_btnBox button.stu_btn_right { float:right; -webkit-width:calc(100% - 52px); width:calc(100% - 52px); border-color:#ee685a; background:#ee685a; color:#fff; }
 .stu_nav_container .stu_btnBox button.stu_btn_left:before { content:""; display:inline-block; position:relative; width:26.25px; height:30px; vertical-align:middle; background-position:-191.25px -120px; background-size:240px; }
  .stu_nav_container .stu_btnBox button.stu_btn_right:before { content:""; display:inline-block; position:relative; width:22.5px; height:30px; padding-right:2px; vertical-align:middle; background-position:-217.5px -120px; background-size:240px; }
 .stu_nav_container .stu_btnBox button.stu_btn_left:hover { background:#fafafa; }
-.stu_nav_container .stu_btnBox button.stu_btn_right:hover { background:#37c68d; }
+.stu_nav_container .stu_btnBox button.stu_btn_right:hover { background:#e35353; }
 
 
 
@@ -571,7 +571,7 @@ footer { padding:0 2%; }
 
 /* 상품 리스트 - 2단(스와이핑) */
 .stu_prd_list { padding-top:60px; background:#fff; }
-.stu_prd_list .prd_container { padding:10px 6.4% 20px; border:1px solid #ddd; }
+.stu_prd_list .prd_container { padding:10px 6.4% 30px; border:1px solid #ddd; }
 .stu_prd_list .stu_h3_title { margin:0; }
 .stu_prd_list .prd_item { width:23.8%; margin:0 .8%; }
 .stu_prd_list .prd_item:first-child { margin-left:0; }
