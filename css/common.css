@@ -190,7 +190,7 @@ body.modal-opened { overflow:visible; }
 footer { padding:30px 2% 50px; }
 .stu_footerMenu img { width:165px; }
 .stu_utilMenu { display:block; }
-.stu_utilMenu li { display:inline-block; padding-left:15px; margin-left:15px; background:url(../images/bar_2x13.png) left center no-repeat; }
+.stu_utilMenu li { display:inline-block; padding-left:15px; margin-left:15px; background:url(../images/footer/bar_2x13.png) left center no-repeat; }
 .stu_utilMenu li:first-child { background:none; padding:0; margin:0; }
 .stu_footerInfo address { line-height:24px; }
 }
