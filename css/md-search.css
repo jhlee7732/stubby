@@ -5,12 +5,12 @@
 /* ========================================================= */
 
 /* 공통 */
-.md-header a.ico_back2, .md-content .content-header.ico_country:before, .md-content .content-header.ico_theme:before, .md-content .content-header.ico_product:before { background-image:url(../images/common/stu_icon.png); background-repeat:no-repeat; }
+.md-header a.ico_back2, .md-content .content-header.ico_country:before, .md-content .content-header.ico_theme:before, .md-content .content-header.ico_product:before, .md-section .like, .md-section .like.active, .md-section .score:before, .md-section .score.new:before, .md-section .review:before { background-image:url(../images/common/stu_icon.png); background-repeat:no-repeat; }
 
 
 
 /* background 음영 */
-.stu_md-background { display:none; position:fixed; top:0; right:0; bottom:0; left:0; margin:0; padding:0; background:rgba(0,0,0,.5); overflow:hidden; z-index:10; }
+.stu_md-background { display:none; position:fixed; top:0; right:0; bottom:0; left:0; margin:0; padding:0; background:rgba(0,0,0,.5); overflow:hidden; z-index:11; }
 .stu_md-background.on { display:block; }
 
 
@@ -43,16 +43,48 @@
 .md-content .value .name { font-size:16px; font-weight:400; color:#444; }
 .md-content .value .category { display:block; font-size:15px; font-weight:300; color:#888; }
 .md-content .count { -webkit-flex-shrink:0; flex-shrink:0; -webkit-align-self:center; align-self:center; text-align:right; font-size:15px; font-weight:300; color:#37c68d; }
-.md-content .md-product { -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1; position:relative; }
+
+
+
+
+/*.md-content .md-product { -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1; position:relative; }
 .md-content .md-photo { float:left; position:relative; width:93px; height:93px; margin-right:12px; -webkit-border-radius:3px; border-radius:3px; background:url(../images/thumb/bg-default.gif) center no-repeat; background-size:cover; overflow:hidden; white-space:normal; }
 .md-content .md-product .name { display:block; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; -webkit-max-width:calc(100% - 90px); max-width:calc(100% - 90px); max-height:50px; padding:4px 0 2px; white-space:normal; word-wrap:normal; text-overflow:ellipsis; overflow:hidden; }
 .md-content .md-product .txt { font-size:16px; font-weight:400; line-height:22px; color:#444; }
 .md-content .md-product .category { display:block; font-size:15px; font-weight:300; color:#888; }
 .md-content .md-product .price { font-size:15px; font-weight:300; color:#888; }
-.md-content .md-product .amount, .md-content .md-product .base { font-weight:300; color:#444; }
+.md-content .md-product .amount, .md-content .md-product .base { font-weight:300; color:#444; }*/
 
-
-
+/* 상품 리스트 - 1단 small */
+.md-section .prd_header { position:relative; }
+.md-section a.stu_reset { line-height:26px; }
+.md-section a.stu_reset:after { content:""; display:inline-block; width:16px; height:16px; margin-left:3px; vertical-align:-2.5px; background-position:-192px -176px; background-size:256px; }
+.md-section span.prd_count { display:inline-block; margin-left:4px; font-size:17px; font-weight:700; vertical-align:baseline; color:#3ad195; }
+.md-section .prd_list { margin:0; background:#fff; }
+.md-section .prd_item { display:-webkit-box; display:-webkit-flex; display:flex; position:relative; border-top:1px solid #e5e5e5; padding:14px 10px 16px 15px; }
+.md-section .prd_item:first-child { border-top:none; }
+.md-section .like { position:absolute; top:16px; left:73px; width:28px; height:28px; background-position:-112px 0; background-size:224px; z-index:2; }
+.md-section .like.active { background-position:-84px 0; }
+.md-section a.prd { -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1; position:relative; }
+.md-section a.lock-on { pointer-events:none; }
+.md-section a.lock-on:after { content:""; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(255,255,255,.75); }
+.md-section .thumb { float:left; position:relative; width:88px; height:88px; margin-right:12px; -webkit-border-radius:3px; border-radius:3px; overflow:hidden; }
+.md-section .thumb:before { content:""; position:absolute; top:0; left:0; right:0; height:30%; background-image:linear-gradient(to bottom, black, rgba(0,0,0,0)); opacity:.2; z-index:1; }
+.md-section .thumb img { height:100%; width:auto; }
+.md-section .band { position:absolute; display:inline-block; bottom:0; right:0; padding:2px 6px; -webkit-border-top-left-radius:3px; border-top-left-radius:3px; font-size:13px; font-weight:400; color:#fff; }
+.md-section .cpn { margin-top:-2px; font-size:13px; font-weight:400; color:#497eb7; }
+.md-section .duration { color:#8f8f8f; }
+.md-section .duration:before { content:""; display:inline-block; height:12px; margin:0 6px 0 4px; border-left:1px solid #ddd; vertical-align:-1px; }
+.md-section .name { display:-webkit-box; -webkit-min-height:20px; min-height:20px; -webkit-max-height:35.2px; max-height:35.2px; font-size:14px; font-weight:500; line-height:18px; color:#222; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.md-section .tag { display:-webkit-box; -webkit-max-height:17.6px; max-height:17.6px; font-size:13px; font-weight:300; color:#8f8f8f; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical; }
+.md-section .score { display:inline-block; position:absolute; left:100px; bottom:-2px; font-size:14px; font-weight:400; line-height:18px; color:#222; }
+.md-section .score:before { content:""; display:inline-block; width:14px; height:14px; margin-right:2px; vertical-align:-1.5px; background-position:0 -119.66px; background-size:213.66px; }
+.md-section .score.new:before { content:""; display:inline-block; width:15.4px; height:14px; margin-right:2px; vertical-align:-1.5px; background-position:-181.3px -154px; background-size:224px; }
+.md-section .ico_star_bg { display:none; }
+.md-section .review { color:#8f8f8f; }
+.md-section .review:before { content:""; display:inline-block; width:14px; height:14px; margin:0 4px 0 8px; vertical-align:-2.3px; background-position:-182px -140px; background-size:224px; }
+.md-section .price { display:inline-block; position:absolute; right:0; bottom:-2px; font-size:14px; font-weight:500; line-height:18px; color:#222; }
+.md-section .price span { margin-left:2px; font-size:13px; font-weight:400; color:#8f8f8f; }
 
 
 

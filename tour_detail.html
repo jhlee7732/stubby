@@ -366,20 +366,33 @@
                     <div class="md-section">
                         <div class="content-header ico_product">상품</div>
                         <ul class="content-list">
-                            <li class="content-item">
-                                <a href="#">
-                                    <div class="md-product">
-                                        <figure class="md-photo">
-                                            <img class="fh lazyload" data-src="images/sample/01.jpg" alt=""/>
-                                        </figure>
-                                        <b class="name">
-                                            <span class="txt">[인디고파리] 음악과 함께 파리야경시내 워킹투어</span>
-                                        </b>
-                                        <i class="category">프랑스</i>
-                                        <span class="price">
-                                            <b class="amount">20,000원</b>
-                                            <i class="base">/ 1인</i>
-                                        </span>
+                            <li class="prd_item">
+                                <div class="like"></div>
+                                <a href="#" class="prd lock-off">
+                                    <figure class="thumb">
+                                        <img class="fw lazyload" data-src="images/sample/m01.jpg" alt=""/>
+                                        <div class="band bg_red">EVENT</div>
+                                    </figure>
+                                    <div class="prd_info">
+                                        <div class="cpn">인디고트래블
+                                            <span class="duration">3 시간</span>
+                                        </div>
+                                        <div class="name">
+                                            <span>[이벤트투어] 음악과 함께 파리야경시내 워킹투어</span>
+                                        </div>
+                                        <div class="tag">
+                                            <span>시내투어 · 워킹 · 야경</span>
+                                        </div>
+                                        <div class="score">
+                                            <div class="ico_star_bg">
+                                                <div class="ico_star" style="width:90%"></div>
+                                            </div>
+                                            <span>4.5</span>
+                                            <span class="review">131</span>
+                                        </div>
+                                        <div class="price">1,000원
+                                            <span>/ 1인</span>
+                                        </div>
                                     </div>
                                 </a>
                             </li>
@@ -1268,7 +1281,7 @@
         });
 
         // 리스트 찜하기(토글)
-        $('.stu_prd_list .like').on('click', function() {
+        $('.like').on('click', function() {
             $(this).toggleClass('active');
         });
 

@@ -270,20 +270,33 @@
                     <div class="md-section">
                         <div class="content-header ico_product">상품</div>
                         <ul class="content-list">
-                            <li class="content-item">
-                                <a href="#">
-                                    <div class="md-product">
-                                        <figure class="md-photo">
-                                            <img class="fh lazyload" data-src="images/sample/m01.jpg" alt=""/>
-                                        </figure>
-                                        <b class="name">
-                                            <span class="txt">[인디고파리] 음악과 함께 파리야경시내 워킹투어</span>
-                                        </b>
-                                        <i class="category">프랑스</i>
-                                        <span class="price">
-                                            <b class="amount">20,000원</b>
-                                            <i class="base">/ 1인</i>
-                                        </span>
+                            <li class="prd_item">
+                                <div class="like"></div>
+                                <a href="#" class="prd lock-off">
+                                    <figure class="thumb">
+                                        <img class="fw lazyload" data-src="images/sample/m01.jpg" alt=""/>
+                                        <div class="band bg_red">EVENT</div>
+                                    </figure>
+                                    <div class="prd_info">
+                                        <div class="cpn">인디고트래블
+                                            <span class="duration">3 시간</span>
+                                        </div>
+                                        <div class="name">
+                                            <span>[이벤트투어] 음악과 함께 파리야경시내 워킹투어</span>
+                                        </div>
+                                        <div class="tag">
+                                            <span>시내투어 · 워킹 · 야경</span>
+                                        </div>
+                                        <div class="score">
+                                            <div class="ico_star_bg">
+                                                <div class="ico_star" style="width:90%"></div>
+                                            </div>
+                                            <span>4.5</span>
+                                            <span class="review">131</span>
+                                        </div>
+                                        <div class="price">1,000원
+                                            <span>/ 1인</span>
+                                        </div>
                                     </div>
                                 </a>
                             </li>
@@ -542,7 +555,7 @@
                         <li class="filter-section stu_clearfix">
                             <h4 class="stu_title">상품 정렬</h4>
                             <ul class="filter-wrap sortBy">
-                                <li class="filter-list table on">
+                                <li class="filter-list table default on">
                                     <div class="filter-item">인기순</div>
                                 </li>
                                 <li class="filter-list table">
@@ -559,7 +572,7 @@
                         <li class="filter-section">
                             <h4 class="stu_title">카테고리</h4>
                             <ul class="filter-wrap category">
-                                <li class="filter-list on">
+                                <li class="filter-list default on">
                                     <div class="filter-item">전체</div>
                                 </li>
                                 <li class="filter-list">
@@ -626,7 +639,7 @@
                         <li class="filter-section">
                             <h4 class="stu_title">투어 진행방식</h4>
                             <ul class="filter-wrap process">
-                                <li class="filter-list on">
+                                <li class="filter-list default on">
                                     <div class="filter-item">전체</div>
                                 </li>
                                 <li class="filter-list">
@@ -656,6 +669,36 @@
                     </div>
                 </div>
                 <ul class="prd_list">
+                    <li class="prd_item">
+                        <div class="like"></div>
+                        <a href="tour_detail.html" class="prd lock-off">
+                            <figure class="thumb">
+                                <img class="fh lazyload" data-src="images/sample/01.jpg" alt=""/>
+                                <div class="band bg_red">20%</div>
+                            </figure>
+                            <div class="prd_info">
+                                <div class="cpn">인디고트래블
+                                    <span class="duration">20 시간</span>
+                                </div>
+                                <div class="name">
+                                    <span>몽생미셸 S 야경투어 [숙소 샌딩 샌드위치 제공 워킹투어 제공]</span>
+                                </div>
+                                <div class="tag">
+                                    <span>근교투어 · 차량 · 야경 · 픽업/샌딩</span>
+                                </div>
+                                <div class="score">
+                                    <div class="ico_star_bg">
+                                        <div class="ico_star" style="width:90%"></div>
+                                    </div>
+                                    <span>4.5</span>
+                                    <span class="review">610</span>
+                                </div>
+                                <div class="price">149,000원
+                                    <span>/ 1인</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                     <li class="prd_item">
                         <div class="like"></div>
                         <a href="#" class="prd lock-off">
@@ -690,7 +733,7 @@
                         <div class="like"></div>
                         <a href="#" class="prd lock-off">
                             <figure class="thumb">
-                                <img class="fh lazyload" data-src="images/sample/01.jpg" alt=""/>
+                                <img class="fh lazyload" data-src="images/sample/04.jpg" alt=""/>
                                 <div class="band bg_red d-n">45%</div>
                             </figure>
                             <div class="prd_info">
@@ -708,7 +751,7 @@
                                         <div class="ico_star" style="width:90%"></div>
                                     </div>
                                     <span>4.5</span>
-                                    <span class="review">847</span>
+                                    <span class="review">247</span>
                                 </div>
                                 <div class="price">180,000원
                                     <span>/ 1인</span>
@@ -1069,6 +1112,16 @@
             $('.sortBy .filter-list:first, .category .filter-list:first, .process .filter-list:first').addClass('on');
         });
 
+        // 상품(필터) 카운팅
+        $('.prd_filter .filter-list, .prd_filter a.stu_reset').on('click', function() {
+            $('.select_count').text($('.prd_filter .filter-wrap').children('li.on').not('li.default.on').length);
+            if(parseInt($('.select_count').text()) == 0) {
+                $('.select_count').css({background:'none', color:'rgba(58,209,149,0)'});
+            } else {
+                $('.select_count').css({background:'#fff', color:'rgba(58,209,149,1)'});
+            };
+        });
+
         // 도시(필터) 선택 초기화
         $('.spot_filter a.stu_reset, .stu_prd_list a.stu_reset').click(function() {
             $('.checkmark').addClass('d-n');
@@ -1076,7 +1129,7 @@
         });
 
         // 도시(필터) 카운팅
-        $('.img-wrap, a.stu_reset').on('click', function() {
+        $('.spot_filter .img-wrap, .spot_filter a.stu_reset, .stu_prd_list a.stu_reset').on('click', function() {
             $('.spot_count').text($('.txt-wrap').children('p.on').length);
             if(parseInt($('.spot_count').text()) == 0) {
                 $('.spot_count').css({background:'none', color:'rgba(255,255,255,0)'});
