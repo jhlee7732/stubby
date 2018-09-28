@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+<head>
+    <title>프리랜서 웹디자이너 이준휘</title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- swiper.js : 이미지슬라이더 -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="gnb_container">
+        <div class="inner_wrap">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img class="fw" src="images/common/jn-logo.png" alt="logo"/>
+                </a>
+            </h1>
+            <button class="gnb ico menu"></button>
+            <div class="lnb_container">
+                <ul class="lnb_group">
+                    <li class="lnb_list">
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="lnb_list">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="lnb_list">
+                        <a href="#">Works</a>
+                    </li>
+                    <li class="lnb_list">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="lnb_list">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="main_visual pd-0">
+        <div class="mobile">
+            <img class="fh" src="images/home/jn-banner-m.jpg" alt=""/>
+        </div>
+        <div class="pc">
+            <img class="fh" src="images/home/jn-banner.jpg" alt=""/>
+        </div>
+    </section>
+    <section class="service">
+        <div class="inner_wrap">
+            <h2 class="title">SERVICE</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <div class="ico_wrap">
+                                <img class="fh" src="images/home/ico_service01.gif" alt=""/>
+                            </div>
+                        </dt>
+                        <dd>DIRECTION<span>디렉션</span></dd>
+                    </dl>
+                    <div class="desc">
+                        <p>고객의 요구를 듣고 현재의 문제점을 분석하여 최적의 솔루션을 제시합니다. 디자인에 들어가기 앞서 웹사이트를 효율적으로 만들기위한 토대를 만듭니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <div class="ico_wrap">
+                                <img class="fh" src="images/home/ico_service02.gif" alt=""/>
+                            </div>
+                        </dt>
+                        <dd>DESIGN<span>디자인</span></dd>
+                    </dl>
+                    <div class="desc">
+                        <p>컨펌된 기획안에 맞춰 디자인을 진행합니다. UX/UI의 중요성이 증가하는 추세 속에서 디자인의 역할을 이해하고 계획에 가장 적합한 제안을 드립니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <div class="ico_wrap">
+                                <img class="fh" src="images/home/ico_service03.gif" alt=""/>
+                            </div>
+                        </dt>
+                        <dd>CODING<span>코딩</span></dd>
+                    </dl>
+                    <div class="desc">
+                        <p>스마트폰, 태블릿PC 등 모바일 장비를 통해 이동중에도 인터넷을 매개로 정보를 수집할 수 있도록 다양한 디바이스에 최적화된 반응형 웹사이트를 구축합니다.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="works">
+        <div class="inner_wrap">
+            <h2 class="title">WORKS</h2>
+        </div>
+    </section>
+</main>
+<footer></footer>
+<script>
+$(document).ready(function() {
+    // gnb 메뉴 토글
+    $('button.gnb').on('click', function() {
+        $('body').toggleClass('modal-opened');
+        $('.lnb_container').toggleClass('active');
+        $(this).toggleClass('menu close');
+        return false;
+    });
+    // gnb 메뉴 닫기(영역 밖 선택)
+    $(document).click(function(e) {
+        if(e.target.className == 'active') { return false }
+        if($('body').find('div').hasClass('active')) {
+            $('body').toggleClass('modal-opened');
+            $('.lnb_container').toggleClass('active');
+            $('button.gnb').toggleClass('menu close');
+        };
+    });
+    // service 토글
+    $('.service li').on('click', function() {
+        $(this).toggleClass('active');
+    });
+});
+</script>
+</body>
+</html>
