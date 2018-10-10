@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- index -->
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- lazysizes.min.js : 레이지로딩 -->
     <script type="text/javascript" async="" src="js/lazysizes.min.js"></script>
     <!-- swiper.js : 이미지슬라이더 -->
@@ -23,6 +25,9 @@
 
 </head>
 <body>
+<div id="loading">
+    <img src="images/common/loading.gif" alt="loading..."/>
+</div>
 <header>
     <div class="gnb_container">
         <div class="inner_wrap">
@@ -333,22 +338,6 @@
 </footer>
 <script>
 $(document).ready(function() {
-    // gnb 메뉴 토글
-    $('button.gnb').on('click', function() {
-        $('body').toggleClass('modal-opened');
-        $('.lnb_container').toggleClass('active');
-        $(this).toggleClass('menu close');
-        return false;
-    });
-    // gnb 메뉴 닫기(영역 밖 선택)
-    $(document).click(function(e) {
-        if(e.target.className == 'active') { return false }
-        if($('body').find('div').hasClass('active')) {
-            $('body').toggleClass('modal-opened');
-            $('.lnb_container').toggleClass('active');
-            $('button.gnb').toggleClass('menu close');
-        };
-    });
     // service 토글
     $('.service li').on('click', function() {
         $(this).toggleClass('active');
