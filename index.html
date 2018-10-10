@@ -6,13 +6,18 @@
     <!-- meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/common/favicon_32.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="images/common/favicon_196.png">
+    <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
 
     <!-- CSS/JavaScript -->
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <!-- lazysizes.min.js : 레이지로딩 -->
+    <script type="text/javascript" async="" src="js/lazysizes.min.js"></script>
     <!-- swiper.js : 이미지슬라이더 -->
     <script type="text/javascript" src="js/swiper.min.js"></script>
 
@@ -23,7 +28,7 @@
         <div class="inner_wrap">
             <h1 class="logo">
                 <a href="index.html">
-                    <img class="fw" src="images/common/jn-logo.png" alt="logo"/>
+                    <img class="fw" src="images/common/jn-logo.png" alt="JN"/>
                 </a>
             </h1>
             <button class="gnb ico menu"></button>
@@ -58,7 +63,7 @@
             <img class="fh" src="images/home/jn-banner.jpg" alt=""/>
         </div>
     </section>
-    <section class="service">
+    <section class="service hr">
         <div class="inner_wrap">
             <h2 class="title">SERVICE</h2>
             <ul>
@@ -69,7 +74,7 @@
                                 <img class="fh" src="images/home/ico_service01.gif" alt=""/>
                             </div>
                         </dt>
-                        <dd>DIRECTION<span>디렉션</span></dd>
+                        <dd>PLANNING<span>기획</span></dd>
                     </dl>
                     <div class="desc">
                         <p>고객의 요구를 듣고 현재의 문제점을 분석하여 최적의 솔루션을 제시합니다. 디자인에 들어가기 앞서 웹사이트를 효율적으로 만들기위한 토대를 만듭니다.</p>
@@ -104,13 +109,228 @@
             </ul>
         </div>
     </section>
-    <section class="works">
+    <section class="works hr">
         <div class="inner_wrap">
             <h2 class="title">WORKS</h2>
+            <h4 class="more"><a href="#">MORE</a></h4>
+            <ul class="item-container pd-b-10 clearfix">
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">ARTBOX 홈페이지 리뉴얼 제안</li>
+                            <li class="category">웹디자인</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">몬스터길들이기 2D 일러스트</li>
+                            <li class="category">일러스트</li>
+                            <li class="desc">넷마블 모바일 게임 몬스터길들이기 공식카페의 대표작가로 활동하며 2D 캐릭터 일러스트 작업을 맡았습니다. 주로 가벼운 느낌의 샐채색 형식으로 진행했습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">그래픽1</li>
+                            <li class="category">그래픽디자인</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">웹디자인2</li>
+                            <li class="category">웹디자인</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">그래픽2</li>
+                            <li class="category">그래픽디자인</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">일러스트2</li>
+                            <li class="category">일러스트</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">웹디자인3</li>
+                            <li class="category">웹디자인</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fw" src="images/home/sample/w01_lqip.jpg" data-src="images/home/sample/w01.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">일러스트3</li>
+                            <li class="category">일러스트</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                        </ol>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="inner_wrap">
+            <h2 class="title">BLOG</h2>
+            <h4 class="more"><a href="#">MORE</a></h4>
+        </div>
+        <div class="inner_wrap pd-0">
+            <div class="swiper-container pd-b-10 swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/b01_lqip.jpg" data-src="images/home/sample/b01.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/b01_lqip.jpg" data-src="images/home/sample/b01.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/b01_lqip.jpg" data-src="images/home/sample/b01.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/b01_lqip.jpg" data-src="images/home/sample/b01.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/b01_lqip.jpg" data-src="images/home/sample/b01.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
 </main>
-<footer></footer>
+<footer>
+    <div class="utils">
+        <div class="inner_wrap">
+            <ul class="links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="my-sns">
+                <li class="facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100022773820761" target="_blank">페이스북</a>
+                </li>
+                <li class="nblog">
+                    <a href="https://jhlee7732.blog.me" target="_blank">네이버블로그</a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/junhwi87/?hl=ko" target="_blank">인스타그램</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="primary">
+        <div class="inner_wrap">
+            <div class="footer_logo">
+                <img class="fh" src="images/common/jn-logo_footer.png" alt="JN"/>
+            </div>
+            <address>
+                <span>Phone : +82 10-9397-9713</span>
+                <span>E-mail : jhlee7732@naver.com</span>
+                <span>Address : 15, Dasanjungang-ro 82beon-gil, Namyangju-si, Gyeonggi-do, Republic of Korea</span>
+                <span>Copyright 2018. Lee junhwi. All right reserved.</span>
+            </address>
+        </div>
+    </div>
+</footer>
 <script>
 $(document).ready(function() {
     // gnb 메뉴 토글
@@ -133,6 +353,45 @@ $(document).ready(function() {
     $('.service li').on('click', function() {
         $(this).toggleClass('active');
     });
+
+    // item 개수 제어
+    $(window).resize(function() {
+        $('.works .item').hide();
+        var TBview = window.matchMedia("(min-width:600px) and (max-width:1024px)");
+        var PCview = window.matchMedia("(min-width:1025px)");
+        if (TBview.matches) {
+            $('.works .item').slice(0, 6).show();
+        } else if (PCview.matches) {
+            $('.works .item').slice(0, 8).show();
+        } else {
+            $('.works .item').slice(0, 3).show();
+        }
+    }).trigger('resize');
+
+    // 컨텐츠 스와이핑
+    var mySwiper = new Swiper ('.swiper1', {
+        direction:'horizontal',
+        slidesPerView:'auto',
+        slidesPerGroup:5,
+        freeMode:true,
+        navigation: {
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+    })
+
+    // item 필터링
+    // $('#filter li a').click(function() {
+    //     var category = $(this).attr('class');
+    //     $('#filter li').removeClass('active');
+    //     $(this).parent().addClass('active');
+    //     if(category == 'all') {
+    //         $('#itemGroup').children('li.item').show();
+    //     } else {
+    //         $('#itemGroup').children('li:not(.' + category + ')').hide();
+    //         $('#itemGroup').children('li.' + category).show();
+    //     } return false;
+    // });
 });
 </script>
 </body>

@@ -1,8 +1,8 @@
-/*=======================================
-  Current Modified :: 9/26/2018 2:33 PM
-=======================================*/
+/* ========================================================= */
+/*                     [ MOBILE (All) ]                      */
+/* ========================================================= */
 
-/* 공통 */
+/* All */
     /* web font */
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -37,18 +37,22 @@ input:-ms-input-placeholder { color:#c4c4c4; }
 select {width:100%; height:40px; line-height:38px; color:#666; font-size:14px; text-indent:5px; background:#fff; border:1px solid #ccc; }
 textarea { width:100%; height:150px; line-height:18px; padding:10px 15px; font-size:14px; color:#333; resize:none; border:1px solid #ccc; }
 button { display:inline-block; cursor:pointer; }
-    /* a 태그 */
-a { display:block; text-decoration:none; color:#8f8f8f; }
-a:hover,a:active { text-decoration:none; color:#4a4a4a; }
-    /* text */
+    /* a tag */
+a, a:hover, a:active { display:block; text-decoration:none; color:#4a4a4a; }
+    /* h tag */
 h1,h2,h3,h4,h5,h6 { font-weight:400; letter-spacing:0; color:#4a4a4a; }
-h1 { font-size:46px; font-weight:700; line-height:30px; }
-h2 { font-size:22px; font-weight:600; line-height:26px; }
+h1 { font-size:44px; font-weight:700; line-height:30px; }
+h2 { font-size:20px; font-weight:600; line-height:25px; }
 h3 { font-size:17px; font-weight:500; line-height:24px; }
 h4 { font-size:15.5px; line-height:23px; }
 h5 { font-size:14px; line-height:22px; }
 h6 { font-size:13px; line-height:20px; }
+    /* icon */
+button.ico, .more a:after, .reset a:after, .my-sns li a { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
+    /* text */
 .title { margin-bottom:14px; }
+.more, .reset { position:absolute; top:6px; right:20px; padding-right:14px; }
+.more a:after, .reset a:after { content:""; position:absolute; top:6px; right:0; width:10px; height:14px; background-position:-62px -14px; background-size:104px; }
     /* clearfix */
 .clearfix { overflow:hidden; }
 .clearfix:after { content:""; display:table; clear:both; }
@@ -76,6 +80,7 @@ img.fh { position:absolute; width:auto; height:100%; top:-100%; right:-100%; bot
 .pd-0 { padding:0! important; }
 .pd-r-0 { padding-right:0! important; }
 .pd-b-0 { padding-bottom:0! important; }
+.pd-b-10{ padding-bottom:10px; }
     /* Background Color */
 .bg-red { background:#ee685a; }
 .bg-mint { background:#3ad195; }
@@ -85,7 +90,7 @@ img.fh { position:absolute; width:auto; height:100%; top:-100%; right:-100%; bot
 .bg-line { background:#fff; border:1px solid #e5e5e5; color:#8f8f8f; }
 .tone-down { position:absolute; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,.15); }
     /* Button icon */
-button.ico { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; cursor:pointer; }
+button.ico { cursor:pointer; }
 button.gnb { position:absolute; top:11px; width:28px; height:28px; background-size:224px; }
 button.close-w {  }
 button.close { background-position:-28px 0; }
@@ -107,6 +112,21 @@ body.modal-opened { width:100%; height:100%; overflow:hidden; }
 body.modal-opened:after { content:""; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,.4); z-index:1; }
 .inner_wrap { position:relative; width:100%; height:100%; margin:0 auto; padding:0 20px; overflow:visible; }
 .inner_wrap:after { content:""; display:table; clear:both; }
+.hr:after { content:""; display:block; position:relative; height:8px; border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea; background:#f6f6f6; }
+
+
+
+/* item */
+.item { display:-webkit-box; display:-webkit-flex; display:flex; position:relative; margin:0 0 20px; -webkit-border-radius:2px; border-radius:2px; overflow:hidden; }
+.item a { -webkit-box-flex:1; -webkit-flex-grow:1; flex-grow:1; }
+.item a:before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; -webkit-box-shadow:inset 0 0 0 1px rgba(0,0,0,.07); box-shadow:inset 0 0 0 1px rgba(0,0,0,.07); z-index:1; }
+.item-container { font-size:0; }
+.thumb { position:relative; overflow:hidden; }
+.info { padding:8px 12px; text-align:left; }
+.name { display:-webkit-box; -webkit-min-height:20px; min-height:20px; -webkit-max-height:40px; max-height:40px; margin-bottom:4px; font-size:15px; font-weight:500; line-height:20px; color:#4a4a4a; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.category, .date { margin-bottom:8px; font-size:13px; font-weight:400; color:#00b5e2; }
+.date { font-weight:300; color:#8f8f8f; }
+.desc { margin-bottom:6px; font-size:14px; font-weight:300; line-height:20px; color:#8f8f8f; }
 
 
 
@@ -125,6 +145,25 @@ header .lnb_list a { display:block; width:100%; height:100%; font-size:14px; fon
 
 
 
+/* footer */
+footer .utils { background:#45454f; text-align:center; }
+footer .links { display:none; }
+footer .links li.active a { color:#bababd; }
+footer .my-sns { display:inline-block; }
+footer .my-sns li { float:left; margin-left:14px; line-height:50px; }
+footer .my-sns li:first-child { margin-left:0; }
+footer .my-sns li a { display:inline-block; width:28px; height:28px; margin-top:20px;-webkit-border-radius:50%; border-radius:50%; background-size:224px; font-size:0; vertical-align:middle; text-indent:-9999px; }
+footer .my-sns li.facebook a { background-position:0 -56px; }
+footer .my-sns li.nblog a { background-position:-28px -56px; }
+footer .my-sns li.instagram a { background-position:-56px -56px; }
+footer .primary { background:#45454f; }
+footer .primary .inner_wrap { padding:20px 20px 40px; }
+footer .footer_logo { display:none; }
+footer address span { display:block; font-size:12px; font-weight:400; line-height:24px; text-align:center; color:#8d8d92; }
+footer address span:last-child { margin-top:6px; color:#bababd; }
+
+
+
 
 
 
@@ -134,15 +173,31 @@ header .lnb_list a { display:block; width:100%; height:100%; font-size:14px; fon
 
 
 /* ========================================================= */
-/* --------------------------------------------------------- */
-/*                    태블릿 (가로 및 세로)                    */
-/* --------------------------------------------------------- */
+/*                         [ TABLET ]                        */
 /* ========================================================= */
 
 @media (min-width:600px){
 
+/* h tag */
+/*h1,h2,h3,h4,h5,h6 { font-weight:400; letter-spacing:0; color:#4a4a4a; }*/
+/*h1 { font-size:46px; font-weight:700; line-height:30px; }*/
+h2 { font-size:22px; /*font-weight:600;*/ line-height:26px; }
+/*h3 { font-size:17px; font-weight:500; line-height:24px; }*/
+/*h4 { font-size:15.5px; line-height:23px; }*/
+/*h5 { font-size:14px; line-height:22px; }*/
+/*h6 { font-size:13px; line-height:20px; }*/
+/* text */
+/*.title { margin-bottom:14px; }*/
+
 /* wrap */
 .inner_wrap { max-width:985px; min-width:560px;  }
+.hr:after { display:none; }
+
+
+
+/* item */
+.item { display:inline-block; width:-webkit-calc(50% - 16px); width:calc(50% - 16px); margin:0 8px 20px; vertical-align:top; }
+.desc { display:none; }
 
 
 
@@ -157,6 +212,24 @@ header .lnb_list { display:inline-block; position:relative; width:auto; height:6
 header .lnb_list a { font-size:16px; line-height:64px; }
 header .lnb_list a:hover { border-bottom:3px solid #c2edf8; }
 header .lnb_list a.active { border-bottom:3px solid #00b5e2; }
+
+
+
+/* footer */
+footer { padding-top:10px; }
+footer .utils { background:#373741; }
+footer .links, footer .links li { display:block; float:left; }
+footer .links li + li { position:relative; margin-left:42px; }
+footer .links li + li:before { content:""; display:block; position:absolute; top:50%; left:-24px; -webkit-transform:translateY(-50%); transform:translateY(-50%); width:1px; height:11px; background:#6e7075; }
+footer .links a { display:inline-block; height:50px; font-size:13px; font-weight:400; line-height:50px; color:#87878d; }
+footer .my-sns { float:right; }
+footer .my-sns li a { width:26px; height:26px; margin-top:-2px; background-size:208px; }
+footer .my-sns li.facebook a { background-position:0 -52px; }
+footer .my-sns li.nblog a { background-position:-26px -52px; }
+footer .my-sns li.instagram a { background-position:-52px -52px; }
+footer .primary .inner_wrap { padding:28px 20px 40px 136px; }
+footer .footer_logo { display:block; position:absolute; top:30px; left:20px; width:72px; height:48px; }
+footer address span { text-align:left; }
 
 
 
@@ -177,33 +250,53 @@ header .lnb_list a.active { border-bottom:3px solid #00b5e2; }
 
 
 /* ========================================================= */
-/* --------------------------------------------------------- */
-/*                    PC 웹 (가로 및 세로)                    */
-/* --------------------------------------------------------- */
+/*                           [ PC ]                          */
 /* ========================================================= */
-
+@media (min-width:740px) {
+/* item */
+.item { width:-webkit-calc(33.33% - 16px); width:calc(33.33% - 16px); }
+}
 @media (min-width:1025px){
 
-/* text */
+/* h tag */
 /*h1,h2,h3,h4,h5,h6 { font-weight:400; letter-spacing:0; color:#4a4a4a; }*/
 /*h1 { font-size:46px; font-weight:700; line-height:30px; }*/
-h2 { font-size:24px; /*font-weight:600;*/ line-height:26px; }
+h2 { font-size:24px; /*font-weight:600;*/ /*line-height:26px;*/ }
 /*h3 { font-size:17px; font-weight:500; line-height:24px; }*/
 /*h4 { font-size:15.5px; line-height:23px; }*/
 /*h5 { font-size:14px; line-height:22px; }*/
 /*h6 { font-size:13px; line-height:20px; }*/
+/* text */
 /*.title { margin-bottom:14px; }*/
+.more, .reset { right:0; }
 
 
 
 /* wrap */
-.inner_wrap { max-width:1100px; min-width:985px; }
+.inner_wrap { max-width:1100px; min-width:985px; padding:0; }
+
+
+
+/* item */
+.item { width:-webkit-calc(25% - 16px); width:calc(25% - 16px); }
+.item-container { margin:0 -8px; }
+.name { font-size:16px; }
+.category { font-size:14px; font-weight:300; }
 
 
 
 /* header */
 header .gnb_container .inner_wrap, header .lnb_container .lnb_group { padding:0; }
 header .lnb_list { margin-left:48px; }
+
+
+
+/* footer */
+footer { padding-top:30px; }
+footer .links li + li { margin-left:48px; }
+footer .links a { font-size:14px; }
+footer .footer_logo { left:0; width:80px; height:53px; }
+footer address span { font-size:13px; }
 
 
 

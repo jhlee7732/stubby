@@ -1,24 +1,22 @@
 /* ========================================================= */
-/* --------------------------------------------------------- */
-/*                       모바일 (공통)                        */
-/* --------------------------------------------------------- */
+/*                     [ MOBILE (All) ]                      */
 /* ========================================================= */
 
-/* 공통 */
-.service li:after { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
-section { padding-top:30px; }
+/* All */
+.service li:after, .swiper-button-prev, .swiper-button-next { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
+section { padding-top:30px; background:#fff; }
+.swiper-button-prev, .swiper-button-next { display:none; }
 
 
 
-/* 메인비주얼영역 */
+/* Visual */
 .main_visual { margin-top:50px; height:380px; background:#ebebeb; overflow:hidden; }
 .main_visual .mobile { position:relative; height:100%; }
 .main_visual .pc { display:none; }
 
 
 
-/* 서비스 */
-.service { background:#f5f5f5; }
+/* Service */
 .service li { display:table; position:relative; width:100%; border-bottom:1px solid #e5e5e5; cursor:pointer; }
 .service li:last-child { border:none; }
 .service li:after, .service li.active:after { content:""; position:absolute; right:0; width:24px; background-size:208px; }
@@ -34,29 +32,47 @@ section { padding-top:30px; }
 
 
 
+/* works */
+.works .thumb { padding-top:68%; }
+
+
+
+/* blog */
+.blog .item { width:150px; margin:0 8px 20px; }
+.blog .item:first-child { margin-left:20px; }
+.blog .item:last-child { margin-right:20px; }
+.blog .item a:before { display:none; }
+.blog .thumb { padding-top:100%; -webkit-border-radius:0 0 2px 2px; border-radius:0 0 2px 2px; background:#e5e5e5; }
+.blog .info { padding:8px 0; }
+.blog .date { color:#8f8f8f; }
+
+
+
+
+
+
 
 
 
 /* ========================================================= */
-/* --------------------------------------------------------- */
-/*                    태블릿 (가로 및 세로)                    */
-/* --------------------------------------------------------- */
+/*                         [ TABLET ]                        */
 /* ========================================================= */
 
 @media (min-width:600px){
 
-/* 공통 */
+/* All */
+.pd-b-10{ padding-bottom:0; }
 
 
-
-/* 메인비주얼영역 */
+/* Visual */
 .main_visual { margin-top:0; height:306px; }
 .main_visual .mobile { display:none; }
 .main_visual .pc { display:block; position:relative; height:100%; }
 
 
 
-/* 서비스 */
+/* Service */
+.service { background:#f5f5f5; }
 .service li { float:left; width:33.33%; padding:0 10px; border:none; cursor:default; }
 .service li:first-child { padding-left:0; }
 .service li:last-child { padding-right:0; }
@@ -64,9 +80,23 @@ section { padding-top:30px; }
 .service li .desc { display:block; padding:10px 0 24px; }
 .service dl { height:auto; text-align:center; }
 .service dt { display:block; }
-.service dt .ico_wrap { width:68px; height:68px; margin-bottom:8px; }
-.service dd { display:inline-block; padding:0; font-size:18px; }
-.service dd span { font-size:16px; }
+.service dt .ico_wrap { width:60px; height:60px; margin-bottom:8px; }
+.service dd { display:inline-block; padding:0; }
+
+
+
+/* works */
+.works .inner_wrap { padding:0 12px; }
+.works .title { padding-left:8px; }
+
+
+
+/* blog */
+.blog .item { width:184px; }
+
+
+
+
 
 
 
@@ -82,30 +112,49 @@ section { padding-top:30px; }
 
 
 
-
 /* ========================================================= */
-/* --------------------------------------------------------- */
-/*                    PC 웹 (가로 및 세로)                    */
-/* --------------------------------------------------------- */
+/*                           [ PC ]                          */
 /* ========================================================= */
 
 @media (min-width:1025px){
 
 
-/* 공통 */
+/* All */
+.swiper-button-prev, .swiper-button-next { display:block; width:32px; height:41.6px; background-size:332.8px; }
+.swiper-button-prev { left:-54px; background-position:-166.4px -41.6px; }
+.swiper-button-next { right:-54px; background-position:-198.4px -41.6px; }
 
 
 
-/* 메인비주얼영역 */
+/* Visual */
 .main_visual { height:480px; }
 
 
 
-/* 서비스 */
+/* Service */
 .service li { padding:0 20px; }
 .service li .desc { font-size:15px; line-height:28px; }
 .service dt .ico_wrap { width:74px; height:74px; }
+.service dd { font-size:18px; }
+.service dd span { font-size:16px; }
 
+
+
+/* works */
+.works .inner_wrap { padding:0; }
+.works .title { padding:0; }
+.works .thumb { padding-top:86%; }
+.works .info { position:absolute; left:0; bottom:-100%; width:100%; height:100%; padding:54px 16px 0; background:rgba(20,180,202,.8); text-align:center; transition:bottom .2s ease-in-out; }
+.works .info:after { content:"View"; display:inline-block; position:absolute; bottom:40px; left:50%; transform:translateX(-50%); width:80px; height:26px; -webkit-border-radius:13px; border-radius:13px; background:#fff; font-size:16px; font-weight:400; line-height:26px; color:#00b5e2; }
+.works .item:hover .info { bottom:0; }
+.works .name, .works .category { color:#fff; }
+
+
+
+/* blog */
+.blog .item { width:18.8%; margin:0 .75%; }
+.blog .item:first-child { margin-left:0; }
+.blog .item:last-child { margin-right:0; }
 
 
 
