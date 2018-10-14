@@ -9,6 +9,11 @@ section { padding-top:30px; background:#fff; }
 
 
 
+/* Header */
+header .gnb_container button.back { display:none; }
+
+
+
 /* Visual */
 .main_visual { margin-top:50px; height:380px; background:#ebebeb; overflow:hidden; }
 .main_visual .mobile { position:relative; height:100%; }
@@ -26,18 +31,18 @@ section { padding-top:30px; background:#fff; }
 .service li .desc { display:none; padding:10px 0 16px; font-size:14px; font-weight:400; line-height:24px; color:#4a4a4a; cursor:default; }
 .service dl { height:80px; padding:14px 0; line-height:0; }
 .service dt { display:table-cell; }
-.service dt .ico_wrap { display:inline-block; position:relative; width:52px; height:52px; overflow:hidden; }
+.service dt i { display:inline-block; position:relative; width:52px; height:52px; overflow:hidden; }
 .service dd { display:table-cell; padding-left:12px; font-size:16px; font-weight:400; vertical-align:middle; color:#4a4a4a; line-height:22px; }
 .service dd span { display:block; font-size:14px; font-weight:300; color:#8f8f8f; }
 
 
 
-/* works */
+/* Works */
 .works .thumb { padding-top:68%; }
 
 
 
-/* blog */
+/* Blog */
 .blog .item { width:150px; margin:0 8px 20px; }
 .blog .item:first-child { margin-left:20px; }
 .blog .item:last-child { margin-right:20px; }
@@ -80,18 +85,18 @@ section { padding-top:30px; background:#fff; }
 .service li .desc { display:block; padding:10px 0 24px; }
 .service dl { height:auto; text-align:center; }
 .service dt { display:block; }
-.service dt .ico_wrap { width:60px; height:60px; margin-bottom:8px; }
+.service dt i { width:60px; height:60px; margin-bottom:8px; }
 .service dd { display:inline-block; padding:0; }
 
 
 
-/* works */
+/* Works */
 .works .inner_wrap { padding:0 12px; }
 .works .title { padding-left:8px; }
 
 
 
-/* blog */
+/* Blog */
 .blog .item { width:184px; }
 
 
@@ -134,13 +139,13 @@ section { padding-top:30px; background:#fff; }
 /* Service */
 .service li { padding:0 20px; }
 .service li .desc { font-size:15px; line-height:28px; }
-.service dt .ico_wrap { width:74px; height:74px; }
+.service dt i { width:74px; height:74px; }
 .service dd { font-size:18px; }
 .service dd span { font-size:16px; }
 
 
 
-/* works */
+/* Works */
 .works .inner_wrap { padding:0; }
 .works .title { padding:0; }
 .works .thumb { padding-top:86%; }
@@ -151,7 +156,7 @@ section { padding-top:30px; background:#fff; }
 
 
 
-/* blog */
+/* Blog */
 .blog .item { width:18.8%; margin:0 .75%; }
 .blog .item:first-child { margin-left:0; }
 .blog .item:last-child { margin-right:0; }

@@ -1,0 +1,200 @@
+/* ========================================================= */
+/*                     [ MOBILE (All) ]                      */
+/* ========================================================= */
+
+/* All */
+.service li:after, .swiper-button-prev, .swiper-button-next { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
+section { padding-top:30px; background:#fff; }
+.swiper-button-prev, .swiper-button-next { display:none; }
+
+
+
+/* Header */
+header .gnb_container .logo { display:none; }
+header .gnb_container:after { content:"ABOUT"; }
+
+
+
+/* Visual */
+.main_visual { position:relative; margin-top:50px; height:200px; overflow:hidden; }
+.main_visual .title { position:relative; height:60px; top:40%; left:30px; }
+
+
+
+/* profile */
+.profile ol { display:table; width:100%; text-align:center; }
+.profile li { float:left; display:table-cell; position:relative; width:100%; margin-bottom:20px; }
+.profile li:nth-child(1):before { content:""; position:absolute; top:-8px; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); width:134px; height:134px; -webkit-border-radius:50%; border-radius:50%; border:1px solid #00b5e2; }
+.profile li:nth-child(2) { text-align:left; }
+.profile .baloon { display:inline-block; position:relative; margin:0 auto; padding:14px; border:1px solid #e5e5e5; -webkit-border-radius:5px; border-radius:5px; background:#fcfcfc; }
+.profile .baloon:before, .profile .baloon:after { content:""; position:absolute; top:-20px; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); border:10px solid transparent; border-bottom-color:#fcfcfc; }
+.profile .baloon:before { margin:-2.5px 0 0; border-width:11px; border-bottom-color:#e5e5e5; }
+.profile .thumb { display:inline-block; width:120px; height:120px; margin-bottom:12px; -webkit-border-radius:50%; border-radius:50%; }
+.profile .name { margin-bottom:0; font-size:17px; }
+.profile .desc { line-height:24px; }
+.profile .category { display:inline-block; margin-bottom:4px; font-weight:300; color:#8f8f8f; }
+.profile .category + .category:before { content:""; display:inline-block; width:1px; height:12px; margin:0 10px; background:#e5e5e5; vertical-align:middle; }
+.profile .title { margin-bottom:8px; font-size:15px; font-weight:500; line-height:26px; color:#4a4a4a; }
+
+
+
+/* Skills */
+.skills .skill-container { /*width:100%;*/ /*margin:0 auto;*/ }
+.skills .skill-container li { float:left; position:relative; width:100%; margin-bottom:18px; }
+.skills .skill-icon { display:none; }
+.skills .skill-title-holder { position:relative; margin:0 0 5px; padding:0 0 5px; }
+.skills .name { margin-bottom:0; }
+.skills .percent-mark { position:absolute; bottom:0; -webkit-transform:translateX(-50%); transform:translateX(-50%); margin-bottom:2px; padding:0 4px; -webkit-border-radius:3px; border-radius:3px; background:#4a4a4a; font-size:11px; font-weight:400; line-height:24px; color:#fff; }
+.skills .percent-mark:after { content:""; position:absolute; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); border:4px solid transparent; border-top-color:#4a4a4a; }
+.skills .skill-bar-wrapper { position:relative; height:10px; -webkit-border-radius:6px; border-radius:6px; background:#f5f5f5; overflow:hidden; }
+.skills .skill-bar { position:absolute; top:0; bottom:0; width:0%; background:#00b5e2; }
+
+
+
+
+/* Works */
+.works .thumb { padding-top:68%; }
+
+
+
+/* Blog */
+.blog .item { width:150px; margin:0 8px 20px; }
+.blog .item:first-child { margin-left:20px; }
+.blog .item:last-child { margin-right:20px; }
+.blog .item a:before { display:none; }
+.blog .thumb { padding-top:100%; -webkit-border-radius:0 0 2px 2px; border-radius:0 0 2px 2px; background:#e5e5e5; }
+.blog .info { padding:8px 0; }
+.blog .date { color:#8f8f8f; }
+
+
+
+
+
+
+
+
+
+/* ========================================================= */
+/*                         [ TABLET ]                        */
+/* ========================================================= */
+
+@media (min-width:600px){
+
+/* All */
+.pd-b-10{ padding-bottom:0; }
+
+
+
+/* Header */
+header .gnb_container .logo { display:inline-block; }
+
+
+
+/* Visual */
+.main_visual { margin-top:0; height:306px; }
+.main_visual .title { height:74px; left:50px; }
+
+
+
+/* profile */
+.profile li:nth-child(1) { width:212px; }
+.profile li:nth-child(2) { width:-webkit-calc(100% - 212px); width:calc(100% - 212px); }
+.profile .baloon { margin:0 0 0 10px; padding:14px 18px; }
+.profile .baloon:before, .profile .baloon:after { top:32px; left:-9px; border-bottom-color:transparent; border-right-color:#fcfcfc; }
+.profile .baloon:before { margin:0 0 0 -1px; border-width:10px; border-right-color:#e5e5e5; }
+.profile .desc { display:block; }
+
+
+
+/* Skills */
+.skills .skill-container { /*width:100%;*/ /*margin:0 auto;*/ }
+.skills .skill-container li { /*float:left; position:relative;*/ width:50%; margin-bottom:24px; padding:0 0 0 12px; }
+.skills .skill-container li:nth-child(odd) { padding:0 12px 0 0; }
+/*.skills .skill-container li:nth-child(even) { padding-left:12px; }*/
+.skills .skill-icon { float:left; display:block; position:relative; width:52px; height:52px; margin-right:10px; -webkit-border-radius:2px; border-radius:2px; overflow:hidden; }
+.skills .skill-title-holder, .skills .skill-bar-wrapper { float:left; width:-webkit-calc(100% - 62px); width:calc(100% - 62px); }
+.skills .skill-title-holder { position:relative; margin:0 0 5px; padding:0 0 5px; }
+.skills .name { /*margin-bottom:0;*/ padding-top:5px; }
+.skills .percent-mark { position:absolute; bottom:0; -webkit-transform:translateX(-50%); transform:translateX(-50%); margin-bottom:2px; padding:0 4px; -webkit-border-radius:3px; border-radius:3px; background:#4a4a4a; font-size:11px; font-weight:400; line-height:24px; color:#fff; }
+.skills .percent-mark:after { content:""; position:absolute; left:50%; -webkit-transform:translateX(-50%); transform:translateX(-50%); border:4px solid transparent; border-top-color:#4a4a4a; }
+.skills .skill-bar-wrapper { position:relative; height:10px; -webkit-border-radius:6px; border-radius:6px; background:#f5f5f5; overflow:hidden; }
+.skills .skill-bar { position:absolute; top:0; bottom:0; width:0%; background:#00b5e2; }
+
+
+
+/* Works */
+.works .inner_wrap { padding:0 12px; }
+.works .title { padding-left:8px; }
+
+
+
+/* Blog */
+.blog .item { width:184px; }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================= */
+/*                           [ PC ]                          */
+/* ========================================================= */
+
+@media (min-width:1025px){
+
+
+/* All */
+.swiper-button-prev, .swiper-button-next { display:block; width:32px; height:41.6px; background-size:332.8px; }
+.swiper-button-prev { left:-54px; background-position:-166.4px -41.6px; }
+.swiper-button-next { right:-54px; background-position:-198.4px -41.6px; }
+
+
+
+/* Visual */
+.main_visual { max-width:1100px; min-width:985px; margin:0 auto; }
+
+
+
+/* profile */
+.profile li:nth-child(1) { width:300px; }
+.profile li:nth-child(1):before { width:154px; height:154px; }
+.profile li:nth-child(2) { width:-webkit-calc(100% - 300px); width:calc(100% - 300px); }
+.profile .baloon { padding:16px 22px; }
+.profile .thumb { width:140px; height:140px; }
+.profile .name, .profile .title { font-size:18px; }
+.profile .desc { font-size:15px; line-height:26px; }
+
+
+
+/* Works */
+.works .inner_wrap { padding:0; }
+.works .title { padding:0; }
+.works .thumb { padding-top:86%; }
+.works .info { position:absolute; left:0; bottom:-100%; width:100%; height:100%; padding:54px 16px 0; background:rgba(20,180,202,.8); text-align:center; transition:bottom .2s ease-in-out; }
+.works .info:after { content:"View"; display:inline-block; position:absolute; bottom:40px; left:50%; transform:translateX(-50%); width:80px; height:26px; -webkit-border-radius:13px; border-radius:13px; background:#fff; font-size:16px; font-weight:400; line-height:26px; color:#00b5e2; }
+.works .item:hover .info { bottom:0; }
+.works .name, .works .category { color:#fff; }
+
+
+
+/* Blog */
+.blog .item { width:18.8%; margin:0 .75%; }
+.blog .item:first-child { margin-left:0; }
+.blog .item:last-child { margin-right:0; }
+
+
+
+}
