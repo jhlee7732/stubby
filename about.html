@@ -371,14 +371,17 @@
 <script>
 $(document).ready(function() {
     // skill progress
-    $(document).on('scroll', function() {
-        if($('html, body').scrollTop() > $('section.main_visual').outerHeight()) {
+    $(window).on('scroll', function() {
+        var winT = $(window).scrollTop(),
+        winH = $(window).height(),
+        skillsT = $('.skills').offset().top;
+        if(winT + winH > skillsT) {
             $('.skill-container li').each(function() {
-                $(this).find('.skill-bar').animate( {
-                    width: $(this).attr('data-percentage')
+                $(this).find('.skill-bar').animate({
+                    width:$(this).attr('data-percentage')
                 }, 2000);
-                $(this).find('.percent-mark').animate( {
-                    left: $(this).attr('data-percentage')
+                $(this).find('.percent-mark').animate({
+                    left:$(this).attr('data-percentage')
                 }, {
                     duration: 2000,
                     step: function(now, fx) {
