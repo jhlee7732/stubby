@@ -59,13 +59,13 @@
     <section class="works">
         <div class="inner_wrap">
             <h2 class="title">CATEGORY</h2>
-            <div class="swiper-container swiper1 category_group">
-                <ul class="swiper-wrapper category_list">
+            <div class="swiper-container swiper1 cat_topBar">
+                <ul class="swiper-wrapper category_group">
                     <li class="swiper-slide active"><button type="button" class="all"># 전체</button></li>
-                    <li class="swiper-slide"><button type="button" class="cat1"># 웹디자인</button></li>
-                    <li class="swiper-slide"><button type="button" class="cat2"># 비주얼그래픽</button></li>
-                    <li class="swiper-slide"><button type="button" class="cat3"># 3D 모델링</button></li>
-                    <li class="swiper-slide"><button type="button" class="cat4"># 일러스트</button></li>
+                    <li class="swiper-slide"><button type="button" class="work1"># 웹디자인</button></li>
+                    <li class="swiper-slide"><button type="button" class="work2"># 비주얼그래픽</button></li>
+                    <li class="swiper-slide"><button type="button" class="work3"># 3D 모델링</button></li>
+                    <li class="swiper-slide"><button type="button" class="work4"># 일러스트</button></li>
                 </ul>
             </div>
             <ul class="item-container pd-b-10 clearfix">
@@ -168,73 +168,6 @@
             </ul>
         </div>
     </section>
-    <section class="timeline pd-b-10" style="display:none;">
-        <div class="inner_wrap">
-            <h2 class="title">TIMELINE</h2>
-            <div class="year-container current">
-                <h3 class="pd-b-10"><span class="fw-6 c-b">2018</span></h3>
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>2016. 03 ~ 현재</dt>
-                            <dd>유럽 자유여행 스타트업 ㈜스투비플래너 디자인팀 팀장</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-            <div class="year-container">
-                <h3 class="pd-b-10"><span class="fw-6">2017</span></h3>
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>2017. 09 ~ 2017. 11</dt>
-                            <dd>국내 게스트하우스 예약 플랫폼 게하맵 개발 참여</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-            <div class="year-container">
-                <h3 class="pd-b-10"><span class="fw-6">2016</span></h3>
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>2016. 07 ~ 2016. 09</dt>
-                            <dd>SBS아카데미 웹디자인 콘텐츠 개발 수료 (총 700시간)</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>2016. 01 ~ 2016. 05</dt>
-                            <dd>아모레퍼시픽 리리코스 뉴순천지사 마케팅 / 콘텐츠 기획</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-            <div class="year-container">
-                <h3 class="pd-b-10"><span class="fw-6">2010's</span></h3>
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>2015. 06 ~ 2015. 12</dt>
-                            <dd>무인택배서비스 MEYOUBOX 마케팅 / 콘텐츠 기획</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>2011. 06 ~ 2011. 10</dt>
-                            <dd>한국디자인진흥원 KIDP 마케팅 / 콘텐츠 기획</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>2010. 07 ~ 2011. 02</dt>
-                            <dd>㈜BookChefDesign 편집 디자인팀 근무</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
 </main>
 <footer>
     <div class="utils">
@@ -279,17 +212,25 @@ $(document).ready(function() {
     var mySwiper = new Swiper ('.swiper1', {
         direction:'horizontal',
         slidesPerView:'auto',
-        // slidesPerGroup:5,
         freeMode:true,
-        // navigation: {
-        //     nextEl:'.swiper-button-next',
-        //     prevEl:'.swiper-button-prev',
-        // },
     });
-    // item 필터링
-    $('.category_list li button').click(function() {
+    // cat_topBar 고정(슬라이드)
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        var bnHeight = $('.main_visual').height();
+        var gnbHeight = $('.gnb_container').height();
+        var titHeight = $('h2.title').height();
+        var fixHeight = (bnHeight + gnbHeight + titHeight + 30);
+        if(st >= fixHeight) {
+            $('.cat_topBar').addClass('fixedTop');
+        } else if(st < (fixHeight - gnbHeight)) {
+            $('.cat_topBar').removeClass('fixedTop');
+        }
+    });
+    // category_list 선택(필터링)
+    $('.category_group li button').on('click', function() {
         var filterName = $(this).attr('class');
-        $('.category_list li').removeClass('active');
+        $('.category_group li').removeClass('active');
         $(this).parent().addClass('active');
         if(filterName == 'all') {
             $('.item-container').children('li.item').show();
@@ -298,11 +239,12 @@ $(document).ready(function() {
             $('.item-container').children('li.' + filterName).show();
         };
         var st = $(window).scrollTop();
+        var bnHeight = $('.main_visual').height();
         var gnbHeight = $('.gnb_container').height();
-        var bannerHeight = $('.main_visual').height();
-        var fixHeight = (gnbHeight + bannerHeight)
+        var titHeight = $('h2.title').height();
+        var fixHeight = (bnHeight + gnbHeight + titHeight + 30)
         if(st >= fixHeight) {
-            $('html, body').animate({scrollTop : fixHeight + 8}, 0);
+            $('html, body').animate({scrollTop : fixHeight - gnbHeight}, 0);
         } return false;
     });
 });

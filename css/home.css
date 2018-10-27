@@ -3,7 +3,7 @@
 /* ========================================================= */
 
 /* All */
-.service li:after, .swiper-button-prev, .swiper-button-next { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
+.service li:after { background-image:url(../images/common/jn-icon.png); background-repeat:no-repeat; vertical-align:middle; }
 .swiper-button-prev, .swiper-button-next { display:none; }
 
 
@@ -14,7 +14,7 @@ header .gnb_container button.back { display:none; }
 
 
 /* Visual */
-.main_visual { margin-top:50px; height:380px; background:#ebebeb; overflow:hidden; }
+.main_visual { height:380px; background:#ebebeb; }
 .main_visual .mobile { position:relative; height:100%; }
 .main_visual .pc { display:none; }
 
@@ -41,17 +41,6 @@ header .gnb_container button.back { display:none; }
 
 
 
-/* Blog */
-.blog .item { width:150px; margin:0 8px 20px; }
-.blog .item:first-child { margin-left:20px; }
-.blog .item:last-child { margin-right:20px; }
-.blog .item a:before { display:none; }
-.blog .thumb { padding-top:100%; -webkit-border-radius:0 0 2px 2px; border-radius:0 0 2px 2px; background:#e5e5e5; }
-.blog .info { padding:8px 0; }
-.blog .date { color:#8f8f8f; }
-
-
-
 
 
 
@@ -69,7 +58,7 @@ header .gnb_container button.back { display:none; }
 
 
 /* Visual */
-.main_visual { margin-top:0; height:306px; }
+.main_visual { height:306px; }
 .main_visual .mobile { display:none; }
 .main_visual .pc { display:block; position:relative; height:100%; }
 
@@ -92,11 +81,6 @@ header .gnb_container button.back { display:none; }
 /* Works */
 .works .inner_wrap { padding:0 12px; }
 .works .title { padding-left:8px; }
-
-
-
-/* Blog */
-.blog .item { width:184px; }
 
 
 
@@ -130,7 +114,7 @@ header .gnb_container button.back { display:none; }
 
 
 /* Visual */
-.main_visual { height:480px; }
+.main_visual { height:480px; max-width:none; margin:0; }
 
 
 
@@ -150,13 +134,6 @@ header .gnb_container button.back { display:none; }
 .works .info:after { content:"View"; display:inline-block; position:absolute; bottom:40px; left:50%; transform:translateX(-50%); width:80px; height:26px; -webkit-border-radius:13px; border-radius:13px; background:#fff; font-size:16px; font-weight:400; line-height:26px; color:#00b5e2; }
 .works .item:hover .info { bottom:0; }
 .works .name, .works .category { color:#fff; }
-
-
-
-/* Blog */
-.blog .item { width:18.8%; margin:0 .75%; }
-.blog .item:first-child { margin-left:0; }
-.blog .item:last-child { margin-right:0; }
 
 
 

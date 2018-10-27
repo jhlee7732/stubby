@@ -7,32 +7,24 @@ $(document).ready(function() {
     $('.loading').ajaxStop(function() {
         $(this).fadeOut(500);
     });
-    // header & category_group 고정(슬라이드)
+    // header 고정(슬라이드)
     var lastScrollTop = 0, delta = 15;
     $(window).scroll(function(event) {
         var st = $(this).scrollTop();
-        var gnbHeight = $('.gnb_container').height();
-        var bannerHeight = $('.main_visual').outerHeight(true);
-        var catHeight = $('.category_group').height();
-        var fixHeight = (bannerHeight + catHeight);
-        if(st >= (fixHeight + 30)) {
-            $('.category_group').addClass('fixedTop');
-        } else if(st < (fixHeight - 30)) {
-            $('.category_group').removeClass('fixedTop');
-        }
+        var gnbHeight = $('.gnb_container').outerHeight();
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
         if((st > lastScrollTop) && (lastScrollTop > 48)) {
             $('.gnb_container').css('top', - gnbHeight);
-            $('.category_group').css('top', '0');
+            $('.cat_topBar').css('top', '0');
         } else {
             $('.gnb_container').css('top', '0');
-            $('.category_group').css('top', gnbHeight);
+            $('.cat_topBar').css('top', gnbHeight);
         }
         lastScrollTop = st;
     });
     // header 메뉴 토글
-    $('button.menu').on('click', function() {
+    $('header button.menu').on('click', function() {
         $('body').toggleClass('modal-opened');
         $('.lnb_container').toggleClass('active');
         $(this).toggleClass('menu close');
@@ -44,14 +36,21 @@ $(document).ready(function() {
         if($('body').find('div').hasClass('active')) {
             $('body').toggleClass('modal-opened');
             $('.lnb_container').toggleClass('active');
-            $('button.close').toggleClass('menu close');
+            $('header button.close').toggleClass('menu close');
         };
     });
     // item에 필터명 추가
-    $('.works li.category:contains("웹디자인")').closest('li.item').addClass('cat1');
-    $('.works li.category:contains("비주얼그래픽")').closest('li.item').addClass('cat2');
-    $('.works li.category:contains("3D 모델링")').closest('li.item').addClass('cat3');
-    $('.works li.category:contains("일러스트")').closest('li.item').addClass('cat4');
+    $('.works li.category:contains("웹디자인")').closest('li.item').addClass('work1');
+    $('.works li.category:contains("비주얼그래픽")').closest('li.item').addClass('work2');
+    $('.works li.category:contains("3D 모델링")').closest('li.item').addClass('work3');
+    $('.works li.category:contains("일러스트")').closest('li.item').addClass('work4');
+    $('.blog li.category:contains("BLOG")').closest('li.item').addClass('blog1');
+    $('.blog li.category:contains("공지")').closest('li.item').addClass('blog2');
+    $('.blog li.category:contains("LIFE")').closest('li.item').addClass('blog3');
+    $('.blog li.category:contains("일상일기")').closest('li.item').addClass('blog4');
+    $('.blog li.category:contains("여행일기")').closest('li.item').addClass('blog5');
+    $('.blog li.category:contains("TIP")').closest('li.item').addClass('blog6');
+    $('.blog li.category:contains("웹 개발")').closest('li.item').addClass('blog7');
     // 맨 위로 가기
     $('.scroll_top').insertBefore('footer');
     $(window).scroll(function() {
@@ -65,4 +64,11 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop : 0}, 400);
         return false;
     });
+    // window 창 크기 제어
+    // $(window).resize(function() {
+    //     var WDview = window.matchMedia("(min-width:600px)");
+    //     if (WDview.matches) {
+    //         $('button.gnb.close').trigger('click');
+    //     }
+    // }).trigger('resize');
 });

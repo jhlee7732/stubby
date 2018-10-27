@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+<head>
+    <title>BLOG - 웹디자이너 이준휘</title>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/common/favicon_32.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="images/common/favicon_196.png">
+    <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+
+    <!-- CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- index -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- lazysizes.min.js : 레이지로딩 -->
+    <script type="text/javascript" async="" src="js/lazysizes.min.js"></script>
+    <!-- swiper.js : 이미지슬라이더 -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="gnb_container">
+        <div class="inner_wrap">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img class="fw" src="images/common/jn-logo.png" alt="JN"/>
+                </a>
+            </h1>
+            <button class="ico gnb back" onclick="javascript:history.back()"></button>
+            <button class="ico gnb menu"></button>
+            <div class="lnb_container">
+                <ul class="lnb_group">
+                    <li class="lnb_list"><a href="index.html">HOME</a></li>
+                    <li class="lnb_list"><a href="about.html">ABOUT</a></li>
+                    <li class="lnb_list"><a href="works.html">WORKS</a></li>
+                    <li class="lnb_list active"><a href="blog.html">BLOG</a></li>
+                    <li class="lnb_list"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="loading"><img src="images/common/loading.gif" alt="loading..."/></p>
+    <a href="#" class="scroll_top"><button class="ico top"></button></a>
+</header>
+<main>
+    <section class="main_visual pd-0">
+        <img class="fh" src="images/common/bn-blog.jpg" alt=""/>
+        <div class="title">
+            <img class="fh" src="images/common/bt-blog.png" alt=""/>
+        </div>
+    </section>
+    <section class="blog_latest hr" style="display:none;">
+        <div class="inner_wrap">
+            <h2 class="title">LATEST ARTICLES</h2>
+            <div class="swiper-container swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">공지 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                                <li class="category">공지</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">LIFE</li>
+                                <li class="category">LIFE</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">LIFE 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                                <li class="category">LIFE</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">일러스트3 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                                <li class="category">일상일기</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">여행일기</li>
+                                <li class="category">여행일기</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                    <li class="item swiper-slide">
+                        <a href="#">
+                            <figure class="thumb">
+                                <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                            </figure>
+                            <ol class="info">
+                                <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                                <li class="category">TIP</li>
+                                <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                                <li class="date">2018. 9. 18.</li>
+                            </ol>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="blog clearfix">
+        <div class="inner_wrap">
+            <div class="cat_container">
+                <ol class="cat_wrap">
+                    <li class="cat_header">
+                        <h2 class="title">CATEGORY</h2>
+                        <button class="ico gnb close"></button>
+                    </li>
+                    <li class="cat_body">
+                        <ul>
+                            <li class="cat_list active">
+                                <button type="button" class="all">전체글</button>
+                            </li>
+                            <li class="cat_list">
+                                <button type="button" class="blog1">BLOG</button>
+                            </li>
+                            <li class="cat_list sub">
+                                <button type="button" class="blog2">공지</button>
+                            </li>
+                            <li class="cat_list">
+                                <button type="button" class="blog3">LIFE</button>
+                            </li>
+                            <li class="cat_list sub">
+                                <button type="button" class="blog4">일상일기</button>
+                            </li>
+                            <li class="cat_list sub">
+                                <button type="button" class="blog5">여행일기</button>
+                            </li>
+                            <li class="cat_list">
+                                <button type="button" class="blog6">TIP</button>
+                            </li>
+                            <li class="cat_list sub">
+                                <button type="button" class="blog7">웹 개발</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="cat_topBar">
+                <h2 class="title current">전체글</h2>
+            </div>
+            <ul class="item-container">
+                <li class="item">
+                    <a href="#">
+<!--                         <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure> -->
+                        <ol class="info">
+                            <li class="name">공지 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">공지</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">LIFE</li>
+                            <li class="category">LIFE</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">LIFE 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까? 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">LIFE</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다. 20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">LIFE 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">LIFE</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">일상일기 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">일상일기</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">여행일기</li>
+                            <li class="category">여행일기</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure class="thumb">
+                            <img class="lazyload blur-up fh" src="images/home/sample/w02_lqip.jpg" data-src="images/home/sample/w02.jpg" alt=""/>
+                        </figure>
+                        <ol class="info">
+                            <li class="name">TIP 제목이 많이 길어질 경우에는 어떤식으로 표기하는 것이 좋을까?</li>
+                            <li class="category">TIP</li>
+                            <li class="desc">20대 여성 고객의 취향에 적합한 이미지 및 컬러, 아이콘을 기획하고 디자인했으며 인터랙티브한 디자인요소를 추가해 트렌디함까지 갖춘 기업이미지를 꾀하였습니다.</li>
+                            <li class="date">2018. 9. 18.</li>
+                        </ol>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="utils">
+        <div class="inner_wrap">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="my-sns">
+                <li class="facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100022773820761" target="_blank">페이스북</a>
+                </li>
+                <li class="nblog">
+                    <a href="https://jhlee7732.blog.me" target="_blank">네이버블로그</a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/junhwi87/?hl=ko" target="_blank">인스타그램</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="primary">
+        <div class="inner_wrap">
+            <div class="footer_logo">
+                <img class="fh" src="images/common/jn-logo_footer.png" alt="JN"/>
+            </div>
+            <address>
+                <span>Phone : +82 10-9397-9713</span>
+                <span>E-mail : jhlee7732@naver.com</span>
+                <span>Address : 15, Dasanjungang-ro 82beon-gil, Namyangju-si, Gyeonggi-do, Republic of Korea</span>
+                <span>Copyright 2018. Lee junhwi. All right reserved.</span>
+            </address>
+        </div>
+    </div>
+</footer>
+<script>
+$(document).ready(function() {
+    // 컨텐츠 스와이핑
+    var mySwiper = new Swiper ('.swiper1', {
+        direction:'horizontal',
+        slidesPerView:'auto',
+        slidesPerGroup:5,
+        freeMode:true,
+        navigation: {
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+    });
+    // cat_topBar 고정(슬라이드)
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        var bnHeight = $('.main_visual').height();
+        var gnbHeight = $('.gnb_container').height();
+        var fixHeight = (bnHeight + gnbHeight);
+        if(st >= fixHeight) {
+            $('.cat_topBar').addClass('fixedTop');
+        } else if(st < bnHeight) {
+            $('.cat_topBar').removeClass('fixedTop');
+        };
+        // cat_container 플로팅
+        var footTop = $('footer').offset().top;
+        var catTop = $('.cat_container').offset().top;
+        var catHeight = $('.cat_wrap').height();
+        var footPadding = 74;
+        if(st + catHeight > footTop - footPadding)
+            $('.cat_wrap').css({top: (st + catHeight - footTop + footPadding) * -1})
+        else if(st > catTop) {
+            $('.cat_wrap').addClass('stick');
+            $('.cat_wrap').css('top', '0');
+        } else {
+            $('.cat_wrap').removeClass('stick');
+        };
+    });
+    // cat_topBar 토글
+    $('h2.current').on('click', function() {
+        $('.cat_container').toggleClass('modal');
+        $('body').toggleClass('modal-opened');
+    });
+    $('button.close, .cat_list').click(function() {
+        $('.cat_container').removeClass('modal');
+        $('body').removeClass('modal-opened');
+    });
+    // category_list 선택(필터링)
+    $('.cat_list').on('click', function() {
+        var getText = $(this).children('button').text();
+        $('h2.current').text(getText);
+        $('.cat_list').removeClass('active');
+        $(this).addClass('active');
+        var filterName = $(this).children('button').attr('class');
+        if(filterName == 'all') {
+            $('.item-container').children('li.item').show();
+        } else {
+            $('.item-container').children('li:not(.' + filterName + ')').hide();
+            $('.item-container').children('li.' + filterName).show();
+        };
+        var st = $(window).scrollTop();
+        var bnHeight = $('.main_visual').height();
+        var gnbHeight = $('.gnb_container').height();
+        var fixHeight = (bnHeight + gnbHeight);
+        if(st >= fixHeight) {
+            $('html, body').animate({scrollTop : bnHeight}, 0);
+        } return false;
+    });
+    // item margin 자동조정
+    $('.blog .item a').each(function() {
+        if($(this).children('.thumb').length == 0) {
+            $(this).children('.info').css('margin', '0');
+        };
+    });
+});
+</script>
+</body>
+</html>
